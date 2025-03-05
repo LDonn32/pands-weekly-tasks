@@ -1,18 +1,10 @@
-# Write a program, called collatz.py, that asks the user to input any positive integer and outputs the successive values of the following calculation.
 
-# At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one.
 
-# Have the program end if the current value is one.
-
-# Push the program in your pands-weekly-tasks GitHub repository (like you do for all the weekly tasks).
-
-# Example of it running:
-
-# $ python collatz.py
-
-# Please enter a positive integer: 10
-
-# 10 5 16 8 4 2 1
+# This program asks the user to input a positive int and outputs sucessive values following the collatz rule
+# Collatz rule:
+# If even number inputted, divide by 2
+# If odd, multiply by 3 and add 1
+# The program will end if the current value is one.
 
 # Author: Laura Donnelly
 
