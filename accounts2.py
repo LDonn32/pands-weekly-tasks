@@ -1,3 +1,4 @@
+# accounts.py
 # This programme reads in a 10 character account number 
 # outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
 # Author: Laura Donnelly
@@ -29,3 +30,16 @@ def mask_account_number():
 
 # run the code
 mask_account_number()
+
+
+
+
+
+
+
+
+
+
+
+
+
