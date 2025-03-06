@@ -121,9 +121,6 @@ https://www.w3schools.com/python/ref_string_join.asp
 Looked at examples others did
 https://codereview.stackexchange.com/questions/285429/automate-the-boring-stuff-with-python-the-collatz-sequence
 
-Found resources on whats called a name gaurd to help code run smoothly
-
-https://stackoverflow.com/questions/419163/what-does-if-name-main-do
 
 Error on code -  IndentationError: expected an indented block after function definition
 
