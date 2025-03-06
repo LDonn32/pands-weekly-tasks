@@ -19,13 +19,15 @@ amount2 = float(input("Enter a second amount of money in cents:"))
 
 Sum = (amount1 + amount2)/100
 
-#so far this reads but answer not being shown on terminal
-
-# now i need to print this out so its readable
-print("\u20ac35Sum")
-
-# next i need to find out how to include the euro sign without it changing the outcome
+# ok now it reads but i need to add the decimal point
+# going to try an F string 
+# https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/
 
 
+print(f" The total sum is:"€{sum}")
+
+# invalid charcater for €, i will need to import this. 
+# Error message is including Unicode escape Sequence
+# Will try this U+20AC
 
 
