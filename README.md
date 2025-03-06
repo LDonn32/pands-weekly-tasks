@@ -16,7 +16,8 @@ The program should:
 
 ## Resources:
 Documentation for inputting the euro sign using f -strings
- https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/
+
+https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/
 
 
 
@@ -32,6 +33,15 @@ Please enter an 10 digit account number: 1234567890
 XXXXXX7890
 Extra:
 Modify the program to deal with account numbers of any length (yes that is a vague requirement, comment your assumptions)
+
+## Resources:
+
+https://docs.python.org/3/library/string.html
+https://docs.python.org/3/tutorial/introduction.html#strings
+https://www.w3schools.com/python/python_strings.asp
+
+Extra
+Assumptions:
 
 
 # Weekly Task 4
