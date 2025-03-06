@@ -40,5 +40,18 @@ def collatz():
     # Output the sequence as a space-separated string
     print(" ".join(map(str, sequence)))
 
-if __name__ == "__main__":
-    collatz()
+print(collatz())
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
