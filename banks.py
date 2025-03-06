@@ -8,26 +8,16 @@
 # Weekly Task 02
 
 
-
+# prompt user for first amount of money in cents
 amount1 =float(input("Enter amount of money in cent:"))
 
-# I tested first line of code and runs ok 
-
+#prompt user for second amount of money in cents
 amount2 = float(input("Enter a second amount of money in cents:"))
 
-# now I need to add them together
-
+# Add the two amounts and divide by 100 for decimal
 Sum = (amount1 + amount2)/100
 
-# ok now it reads but i need to add the decimal point
-# going to try an F string 
+# print with a F string to include the euro sign 
 # https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/
 
-
-print(f" The total sum is:"€{sum}")
-
-# invalid charcater for €, i will need to import this. 
-# Error message is including Unicode escape Sequence
-# Will try this U+20AC
-
-
+print(f"€{Sum}")
