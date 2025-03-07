@@ -154,7 +154,7 @@ $ python weekday.py
 Tgif!!! It's Friday woohoo!!
 
 
-# Rescourses: 
+## Rescourses: 
 
 Documentation on how to import datetime and use weekday() method
 
