@@ -128,3 +128,28 @@ Below resources helped to fix, I wasn't spacing/tabing code correctly first time
 https://www.youtube.com/watch?v=w5styN3Vaqw
 https://stackoverflow.com/questions/4446366/why-am-i-getting-indentationerror-expected-an-indented-block
 
+
+## Weekly Task 05
+Write a program that outputs whether or not today is a weekday. (The program should be called weekday.py)
+
+You will need to search the web to find how you work out what day it is.
+
+An example of running this program on a Thursday is given below.
+
+$ python weekday.py
+Yes, unfortunately today is a weekday.
+
+
+An example of running it on a Saturday is as follows:
+
+$ python weekday.py
+It is the weekend, yay!
+
+There is no user input.
+
+
+# Rescourses: 
+
+Documentation on how to import datetime and use weekday() method
+https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python
+
