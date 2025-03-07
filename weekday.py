@@ -1,7 +1,7 @@
 # This program outputs whether or 
 # not today is a weekday
 
-# Weekly task 4
+# Weekly task 5
 
 # Author: Laura Donnelly
 
