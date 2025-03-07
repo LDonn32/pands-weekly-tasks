@@ -147,9 +147,20 @@ It is the weekend, yay!
 
 There is no user input.
 
+Modifed the program to include a third option for Friday. 
+An example of running it on a Friday is as follows:
 
-# Rescourses: 
+$ python weekday.py
+Tgif!!! It's Friday woohoo!!
+
+
+## Rescourses: 
 
 Documentation on how to import datetime and use weekday() method
+
 https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python
+
+Documentation on elif, if and else methods used in the code 
+
+https://www.w3schools.com/python/python_conditions.asp
 

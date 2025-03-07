@@ -18,7 +18,7 @@ import datetime
 
 # Get the current date ( 0 = Monday - 6 = Sunday)
 weekno = datetime.date.today().weekday()
-e 
+
 
 if weekno == 4: # 4 is friday
     print("Tgif!!! It's Friday woohoo!!")
