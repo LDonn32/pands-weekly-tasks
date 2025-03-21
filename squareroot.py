@@ -7,7 +7,7 @@
 
 # Author: Laura Donnelly
 
-# Resources on New
+# Resources on Newtons method
 # https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/
 
 
