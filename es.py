@@ -12,41 +12,50 @@
 
 
 
-
-# This defines a function named count_e_in_file. 
-# The function takes one parameter, filename, which is expected to be the path to the file we want to read and count occurrences of 'e' in.
-
+# install modules
 import os
 import sys
 
+# OS gives us functions to interact with the operating system like seeing if a file actually exists. 
+# [Link] https://www.geeksforgeeks.org/os-module-python-examples/
+# Sys gives us better control over input or output. User can engage with the terminal/ comand line more freely 
+# [Link] https://www.geeksforgeeks.org/python-sys-module/
+
+# define function
 def count_e_in_file(filename):
+
+    # here is when we define the function which will count the number of e's from the text in the program
     try:
+        # Check if the file exists and is a text file
+        if not os.path.isfile(filename):
+            print(f"Error: '{filename}' does not exist or is not a valid file.")
+            return
+        
+        # Open the file in read mode
         with open(filename, 'r') as file:
-            content = file.read()
-            # Count occurrences of both 'e' and 'E'
-            e_count = content.lower().count('e')
-            return e_count
-    except FileNotFoundError:
-        print(f"Error: The file '{filename}' does not exist.")
-        sys.exit(1)
-    except IsADirectoryError:
-        print(f"Error: Expected a file but found a directory: '{filename}'.")
-        sys.exit(1)
-    except UnicodeDecodeError:
-        print(f"Error: The file '{filename}' is not a valid text file or contains invalid encoding.")
-        sys.exit(1)
+            text = file.read()
+        
+        # Count the occurrences of the letter 'e'
+        e_count = text.lower().count('e')
+        
+        # Output the result
+        print(f"The number of 'e' characters in the file '{filename}' is: {e_count}")
+    
     except Exception as e:
-        print(f"An unexpected error occurred: {e}")
-        sys.exit(1)
+        print(f"An error occurred: {e}")
 
-# Prompt the user for the filename
-filename = input("Please enter the filename: ")
-
-# Check if file exists and is a valid text file
-if not os.path.isfile(filename):
-    print(f"Error: '{filename}' is not a valid file.")
+# Check if the script is being run with the correct number of arguments
+if len(sys.argv) != 2:
+    print("Usage: python count_e.py <filename>")
     sys.exit(1)
 
-# Call the function to count occurrences of 'e'
-e_count = count_e_in_file(filename)
-print(f"The file '{filename}' contains {e_count} occurrences of the letter 'e'.")
+# Get the filename from the command line argument
+filename = sys.argv[1]
+
+# Call the function to count 'e' in the given file
+count_e_in_file(filename)
+
+
+# still having trouble getting the file to read in the terminal - i think maybe linked to my actual directory or how i downloaded the file. 
+# # Will try either linking my diretory to the program - but that wont work for anyone else running program? 
+# maybe its the way i downlaoded the text file - will try this again and save it on desktop.  
