@@ -34,6 +34,11 @@ def sqrt(n, tolerance=1e-10):
     
     return guess
 
+# still working on getting this to print out on terminal.
+# testing a few ideas before researching 
 
+# print(guess)
 
+# no i need to get inputs and string messages for user input then output
+# researching and coming back to this
 
