@@ -42,3 +42,8 @@ def sqrt(n, tolerance=1e-10):
 # no i need to get inputs and string messages for user input then output
 # researching and coming back to this
 
+
+# return two varriables 
+# assign two varriables
+# print two varriables
+# use an f statement to run 

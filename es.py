@@ -44,6 +44,7 @@ def count_e_in_file(filename):
     except Exception as e:
         print(f"An error occurred: {e}")
 
+# Check this out again - running terminal
 # Check if the script is being run with the correct number of arguments
 if len(sys.argv) != 2:
     print("Usage: python count_e.py <filename>")
