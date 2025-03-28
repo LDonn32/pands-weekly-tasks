@@ -174,3 +174,49 @@ I am asking you to create your own sqrt function and not to use the built in fun
 This is to demonstrate that you can research and code a process (If you really needed the square root you would use one of the above methods). I suggest that you look at the newton method at estimating square roots. 
 
 This is a more difficult task than some of the others, but will be marked equally, so only do as much work on this as you feel comfortable.
+
+
+
+
+## Weekly Task 7 
+
+
+
+
+## Weekly Task 8 
+
+
+
+
+
+Sample code so far with refs and notes - need to update
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Generate 1000 random values from a normal distribution with mean 5 and standard deviation 2
+data = np.random.normal(loc=5, scale=2, size=1000)
+
+# Create an array of x values for the function h(x) = x^3
+x_values = np.linspace(0, 10, 400)
+
+# Compute the y values for h(x) = x^3
+y_values = x_values ** 3  # Correct variable name from 'y_value' to 'y_values'
+
+# Create the plot
+fig, ax = plt.subplots()
+
+# Plot the histogram of the normal distribution
+ax.hist(data, bins=30, density=True, alpha=0.6, color='b', label='Normal Distribution')
+
+# Plot the function h(x) = x^3
+ax.plot(x_values, y_values, color='r', label=r'$h(x) = x^3$')
+
+# Set the title and labels
+ax.set_title('Histogram of Normal Distribution and $h(x) = x^3$')
+ax.set_xlabel('X')
+ax.set_ylabel('Density / Value')
+
+# Show the plot
+plt.show()
