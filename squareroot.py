@@ -11,39 +11,70 @@
 # https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/
 
 
-def sqrt(n, tolerance=1e-10):
-    # 
 
-    if n < 0:
-        raise ValueError("Input must be a positive number")
-    
-    # Initial guess (could be any positive number, but n/2 is a reasonable start)
-    guess = n / 2.0
-    
-    # Iteratively improve the guess using Newton's method
-    while True:
-        # Calculate a new guess
-        new_guess = 0.5 * (guess + n / guess)
-        
-        # Check if the difference between guesses is within the tolerance
-        if abs(new_guess - guess) < tolerance:
-            break
-        
-        # Update guess for the next iteration
-        guess = new_guess
-    
-    return guess
+# Python3 implementation of the approach 
 
-# still working on getting this to print out on terminal.
-# testing a few ideas before researching 
-
-# print(guess)
-
-# no i need to get inputs and string messages for user input then output
-# researching and coming back to this
+# Function to return the square root of 
+# a number using Newtons method 
 
 
-# return two varriables 
-# assign two varriables
-# print two varriables
-# use an f statement to run 
+
+def squareRoot(n, l) :
+
+	# Assuming the sqrt of n as n only 
+	x = n 
+
+	# To count the number of iterations 
+	count = 0
+
+	while (1) :
+		count += 1
+
+		# Calculate more closed x 
+		root = 0.5 * (x + (n / x)) 
+
+		# Check for closeness 
+		if (abs(root - x) < l) :
+			break
+
+		# Update root 
+		x = root
+
+	return root 
+
+# Driver code 
+if __name__ == "__main__" : 
+
+	n = 327
+	l = 0.00001
+
+	print(squareRoot(n, l)) 
+
+
+
+# still not getting user input - i need to look at f statements 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
