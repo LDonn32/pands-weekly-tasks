@@ -7,58 +7,43 @@
 
 # Author: Laura Donnelly
 
-# Resources on New
+
+#[Link] appropriated some code from below link. Modified it to take user input 
 # https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/
 
+# Function to return the square root of
+# a number using Newton's method
+def squareRoot(n, l):
+    # Assuming the sqrt of n as n only
+    x = n
 
+    # To count the number of iterations
+    count = 0
 
-# Python3 implementation of the approach 
+    while True:
+        count += 1
 
-# Function to return the square root of 
-# a number using Newtons method 
+        # Calculate more closed x
+        root = 0.5 * (x + (n / x))
 
+        # Check for closeness
+        if abs(root - x) < l:
+            break
 
+        # Update root
+        x = root
 
-def squareRoot(n, l) :
+    return root
 
-	# Assuming the sqrt of n as n only 
-	x = n 
+# Take a positive floating-point number as input
+n = float(input("Enter a positive number: "))
 
-	# To count the number of iterations 
-	count = 0
-
-	while (1) :
-		count += 1
-
-		# Calculate more closed x 
-		root = 0.5 * (x + (n / x)) 
-
-		# Check for closeness 
-		if (abs(root - x) < l) :
-			break
-
-		# Update root 
-		x = root
-
-	return root 
-
-# Driver code 
-if __name__ == "__main__" : 
-
-	n = 327
-	l = 0.00001
-
-	print(squareRoot(n, l)) 
-
-
-
-# still not getting user input - i need to look at f statements 
-
-
-
-
-
-
+# Ensure that the number is positive
+if n <= 0:
+    print("Please enter a positive number.")
+else:
+    l = 0.00001  # Tolerance for the approximation
+    print(f"Approximate square root of {n} is {squareRoot(n, l)}")
 
 
 
