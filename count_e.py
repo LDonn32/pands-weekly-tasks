@@ -32,28 +32,41 @@ def count_e_in_file(filename):
             return
         
         # Open the file in read mode
-        with open(filename, 'r') as file:
+        with open(filename, 'r', encoding='utf-8') as file:
             text = file.read()
         
         # Count the occurrences of the letter 'e'
-        e_count = text.lower().count('e')
+
+        content = file.read()
+
+        # Counting 'e' and 'E'
+
+        count = content.lower().count('e')  
+        print(f"The number of 'e's in the file '{filename}' is: {count}")
         
         # Output the result
+
         print(f"The number of 'e' characters in the file '{filename}' is: {e_count}")
     
-    except Exception as e:
-        print(f"An error occurred: {e}")
+    # Configure our excpetions 
 
-# Check this out again - running terminal
-# Check if the script is being run with the correct number of arguments
+    except FileNotFoundError:
+        print(f"Error: The file '{filename}' does not exist.")
+    except Exception as e:
+        print(f"An error occurred: {e}")    
+
+# Ensure that there is a filename argument
+
 if len(sys.argv) != 2:
     print("Usage: python count_e.py <filename>")
     sys.exit(1)
 
 # Get the filename from the command line argument
+
 filename = sys.argv[1]
 
 # Call the function to count 'e' in the given file
+
 count_e_in_file(filename)
 
 
