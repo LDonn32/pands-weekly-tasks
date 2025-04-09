@@ -1,12 +1,37 @@
 # pands-weekly-tasks
 
 Author: Laura Donnelly
-Student ID:
-Contact Email:
-
 
 
 This ReadMe file will give a description for the the assigned weekly tasks and additional information and insights for the 2025 Programming and Scripting Module. 
+
+
+# Technologies
+This section covers what tools were used 
+
+-Python
+-Git
+-GitHub
+-VSCode
+
+
+# Built with
+This section covers what libraries/modules were used for the weekly tasks
+
+-Numpy
+-Mathplotlib
+-Pandas
+-Sklearn
+-OS
+-SYS
+
+# Getting Started
+
+## Prerequisites
+
+## Installation 
+
+
 
 # Weekly Task 02
 Write a program called bank.py 
@@ -45,11 +70,12 @@ Modify the program to deal with account numbers of any length (yes that is a vag
 ## Resources:
 
 [Reference] https://docs.python.org/3/library/string.html
+
 [Reference] https://docs.python.org/3/tutorial/introduction.html#strings
+
 [Reference] https://www.w3schools.com/python/python_strings.asp
 
-Extra
-Assumptions:
+## Code explained 
 
 
 # Weekly Task 4
@@ -163,6 +189,7 @@ An example of running it on a Friday is as follows:
 $ python weekday.py
 Tgif!!! It's Friday woohoo!!
 
+## Code explained 
 
 ## Rescourses: 
 
@@ -185,7 +212,7 @@ This is to demonstrate that you can research and code a process (If you really n
 
 This is a more difficult task than some of the others, but will be marked equally, so only do as much work on this as you feel comfortable.
 
-
+## Code explained 
 
 
 # Weekly Task 7 
@@ -200,7 +227,7 @@ Marks will be given for dealing with errors eg no argument, filename that does n
 $ python es.py moby-dick.txt
 116960
 
-
+## Code explained 
 
 # Weekly Task 8 
 Write a program called plottask.py that displays:
@@ -212,8 +239,24 @@ Some marks will be given for making the plot look nice (legend etc).
 
 Please put a copy of the image of the plot (.png file) into the repository
 
+## Code explained 
 
 
+# Contact
 
+Student ID: G00472977
+
+Contact Email: G00472977@atu.ie
+
+
+# Additional Rescources 
+
+Useful template for creating this ReadMe file.
+
+[Reference] https://github.com/othneildrew/Best-README-Template/blob/main/README.md
+
+Python CheatSheet (2025)
+
+[Reference] https://www.geeksforgeeks.org/python-cheat-sheet/
 
 
