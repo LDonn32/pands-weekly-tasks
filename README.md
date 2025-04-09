@@ -44,7 +44,13 @@ The program should:
 
 ## Code explained
 
+```
+prompt user for first amount of money in cents
+amount1 =float(input("Enter amount of money in cent:"))
 
+prompt user for second amount of money in cents
+amount2 = float(input("Enter a second amount of money in cents:"))
+```
 
 
 ## Resources:
