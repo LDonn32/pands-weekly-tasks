@@ -11,24 +11,21 @@
 # rescources:
 
 # Information on the Collatz Problem
-# https://www.askpython.com/python/examples/collatz-conjecture
+# [Link] https://www.askpython.com/python/examples/collatz-conjecture
 
 # Looked at examples others did 
-# https://codereview.stackexchange.com/questions/285429/automate-the-boring-stuff-with-python-the-collatz-sequence
+# [Link] https://codereview.stackexchange.com/questions/285429/automate-the-boring-stuff-with-python-the-collatz-sequence
 
 # Error on code - IndentationError: expected an indented block after function definition
 # Below resources helped to fix, I wasn't spacing/tabing code correctly first time
-# https://www.youtube.com/watch?v=w5styN3Vaqw 
-# https://stackoverflow.com/questions/4446366/why-am-i-getting-indentationerror-expected-an-indented-block
-
-
-
+# [Link] https://www.youtube.com/watch?v=w5styN3Vaqw 
+# [Link] https://stackoverflow.com/questions/4446366/why-am-i-getting-indentationerror-expected-an-indented-block
 
 
 # This function allows the programme to take input from the user, which is used to ask the user for a positive integer.
 
 # resources:
-# https://docs.python.org/3/library/functions.html#input
+# [Link] https://docs.python.org/3/library/functions.html#input
 
 def collatz():
     # Prompt the user to input a positive integer
@@ -42,7 +39,7 @@ def collatz():
 # Python Lists Lists are used to store multiple items in a single variable. Need this in the program to store the sequence of numbers
 
 # resources:
-# https://www.w3schools.com/python/python_lists.asp
+# [Link] https://www.w3schools.com/python/python_lists.asp
 
     # Create a list to store the sequence
     sequence = []
@@ -50,8 +47,8 @@ def collatz():
 # The while Loop With the while loop the program can execute a set of statements as long as a condition is true.
 
 # resources:
-# https://www.w3schools.com/python/python_while_loops.asp
-# https://www.youtube.com/watch?time_continue=175&v=ECduJk00mUU&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=Mjg2NjY
+# [Link] https://www.w3schools.com/python/python_while_loops.asp
+# [Link] https://www.youtube.com/watch?time_continue=175&v=ECduJk00mUU&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=Mjg2NjY
 
 
     # Continue the process until the number becomes 1
@@ -61,7 +58,7 @@ def collatz():
 # It modifies the original list in place and does not return a new list.
 
 # resources:
-# https://www.w3schools.com/python/ref_list_append.asp
+# [Link] https://www.w3schools.com/python/ref_list_append.asp
 
 
         # Add the current number to the sequence
@@ -71,7 +68,7 @@ def collatz():
 # to handle different conditions like checking if a number is even or odd.
 
 # resources:
-# https://www.w3schools.com/python/python_conditions.asp
+# [Link] https://www.w3schools.com/python/python_conditions.asp
 
         # Apply the Collatz rule
         if number % 2 == 0:
@@ -85,7 +82,7 @@ def collatz():
 # The join() method is used to convert a list of numbers into a string with spaces between them.
 
 # resources:
-# https://docs.python.org/3/library/stdtypes.html#str.join https://www.w3schools.com/python/ref_string_join.asp
+# [Link] https://docs.python.org/3/library/stdtypes.html#str.join https://www.w3schools.com/python/ref_string_join.asp
 
     # Output the sequence as a space-separated string
     print(" ".join(map(str, sequence)))
