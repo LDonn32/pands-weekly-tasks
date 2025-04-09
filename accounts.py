@@ -4,14 +4,13 @@
 
 
 # resources: 
+# [Link] https://docs.python.org/3/library/string.html
 
-# https://docs.python.org/3/library/string.html
+# [Link] https://docs.python.org/3/tutorial/introduction.html#strings
 
-# https://docs.python.org/3/tutorial/introduction.html#strings
+# [Link] https://www.w3schools.com/python/python_strings.asp
 
-# https://www.w3schools.com/python/python_strings.asp
-
-# https://www.w3schools.com/python/python_conditions.asp
+# [Link] https://www.w3schools.com/python/python_conditions.asp
 
 def mask_account_number():
     # Read the account number
