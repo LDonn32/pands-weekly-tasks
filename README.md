@@ -3,6 +3,36 @@
 Author: Laura Donnelly
 
 
+This ReadMe file will give a description for the the assigned weekly tasks and additional information and insights for the 2025 Programming and Scripting Module. 
+
+
+# Technologies
+This section covers what tools were used 
+
+-Python
+-Git
+-GitHub
+-VSCode
+
+
+# Built with
+This section covers what libraries/modules were used for the weekly tasks
+
+-Numpy
+-Mathplotlib
+-Pandas
+-Sklearn
+-OS
+-SYS
+
+# Getting Started
+
+## Prerequisites
+
+## Installation 
+
+
+
 # Weekly Task 02
 Write a program called bank.py 
 
@@ -12,13 +42,40 @@ The program should:
 - Add the two amounts
 - Print out the answer in a human readable format with a euro sign and decimal point between the euro and cent of the amount 
 
+## Code explained
 
+The input function will asks the user in the terminal to input the money.
+I am asking them to do so in cents, so I need to convert the money into cents in the code. 
+I can do so using the float function
+#[Reference] https://www.geeksforgeeks.org/taking-input-from-console-in-python/
+#[Reference] https://www.geeksforgeeks.org/float-in-python/
+
+```
+prompt user for first amount of money in cents
+amount1 =float(input("Enter amount of money in cent:"))
+
+prompt user for second amount of money in cents
+amount2 = float(input("Enter a second amount of money in cents:"))
+```
+
+This calculation is then stored as a variable in Sum.
+When this is printed later it should show as decimal to properly count the cents if the input is large enough to convert into euros.
+
+```
+# Add the two amounts and div
+Sum = (amount1 + amount2)/100
+```
 
 ## Resources:
 Documentation for inputting the euro sign using f -strings
 
-https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/
+[Reference] https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/
 
+Resources used for taking inputs from the terminal
+
+#[Reference] https://www.geeksforgeeks.org/taking-input-from-console-in-python/
+
+#[Reference] https://www.geeksforgeeks.org/float-in-python/
 
 
 
@@ -36,12 +93,13 @@ Modify the program to deal with account numbers of any length (yes that is a vag
 
 ## Resources:
 
-https://docs.python.org/3/library/string.html
-https://docs.python.org/3/tutorial/introduction.html#strings
-https://www.w3schools.com/python/python_strings.asp
+[Reference] https://docs.python.org/3/library/string.html
 
-Extra
-Assumptions:
+[Reference] https://docs.python.org/3/tutorial/introduction.html#strings
+
+[Reference] https://www.w3schools.com/python/python_strings.asp
+
+## Code explained 
 
 
 # Weekly Task 4
@@ -66,7 +124,7 @@ Please enter a positive integer: 10
 
 Information on the Collatz Problem
 
-https://www.askpython.com/python/examples/collatz-conjecture
+[Reference] https://www.askpython.com/python/examples/collatz-conjecture
 
 Python input() Function:
 
@@ -81,17 +139,17 @@ Used in this part of code:
 
 Python Lists
 Lists are used to store multiple items in a single variable. Need this in the program to store the sequence of numbers
-https://www.w3schools.com/python/python_lists.asp
+[Reference] https://www.w3schools.com/python/python_lists.asp
 
 Python List append() Method
 The append() method adds a single element to the end of a list. It modifies the original list in place and does not return a new list.
-https://www.w3schools.com/python/ref_list_append.asp
+[Reference] https://www.w3schools.com/python/ref_list_append.asp
 
 The while Loop
 With the while loop the program can execute a set of statements as long as a condition is true.
 
-https://www.w3schools.com/python/python_while_loops.asp
-https://www.youtube.com/watch?time_continue=175&v=ECduJk00mUU&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=Mjg2NjY
+[Reference] https://www.w3schools.com/python/python_while_loops.asp
+[Reference] https://www.youtube.com/watch?time_continue=175&v=ECduJk00mUU&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=Mjg2NjY
 
 Used in this part of code:
 
@@ -102,7 +160,7 @@ Used in this part of code:
 Python Conditional Statements:
 
 This resource explains how if, else, and elif statements work in Python to handle different conditions like checking if a number is even or odd.
-https://www.w3schools.com/python/python_conditions.asp
+[Reference] https://www.w3schools.com/python/python_conditions.asp
 
 Used in this part of code:
 
@@ -115,21 +173,21 @@ Python String Methods and join():
 
 The join() method is used to convert a list of numbers into a string with spaces between them.
 
-https://docs.python.org/3/library/stdtypes.html#str.join
-https://www.w3schools.com/python/ref_string_join.asp
+[Reference] https://docs.python.org/3/library/stdtypes.html#str.join
+[Reference] https://www.w3schools.com/python/ref_string_join.asp
 
 Looked at examples others did
-https://codereview.stackexchange.com/questions/285429/automate-the-boring-stuff-with-python-the-collatz-sequence
+[Reference] https://codereview.stackexchange.com/questions/285429/automate-the-boring-stuff-with-python-the-collatz-sequence
 
 
 Error on code -  IndentationError: expected an indented block after function definition
 
 Below resources helped to fix, I wasn't spacing/tabing code correctly first time.
-https://www.youtube.com/watch?v=w5styN3Vaqw
-https://stackoverflow.com/questions/4446366/why-am-i-getting-indentationerror-expected-an-indented-block
+[Reference] https://www.youtube.com/watch?v=w5styN3Vaqw
+[Reference] https://stackoverflow.com/questions/4446366/why-am-i-getting-indentationerror-expected-an-indented-block
 
 
-## Weekly Task 05
+# Weekly Task 05
 Write a program that outputs whether or not today is a weekday. (The program should be called weekday.py)
 
 You will need to search the web to find how you work out what day it is.
@@ -147,24 +205,27 @@ It is the weekend, yay!
 
 There is no user input.
 
+
+## Extra 
 Modifed the program to include a third option for Friday. 
 An example of running it on a Friday is as follows:
 
 $ python weekday.py
 Tgif!!! It's Friday woohoo!!
 
+## Code explained 
 
 ## Rescourses: 
 
 Documentation on how to import datetime and use weekday() method
 
-https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python
+[Reference] https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python
 
 Documentation on elif, if and else methods used in the code 
 
-https://www.w3schools.com/python/python_conditions.asp
+[Reference] https://www.w3schools.com/python/python_conditions.asp
 
-## Weekly task 6
+# Weekly task 6
 Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
 
 You should create a function called <tt>sqrt</tt> that does this.
@@ -175,48 +236,56 @@ This is to demonstrate that you can research and code a process (If you really n
 
 This is a more difficult task than some of the others, but will be marked equally, so only do as much work on this as you feel comfortable.
 
+## Code explained 
+
+
+# Weekly Task 7 
+Write a program that reads in a text file and outputs the number of e's it contains. Think about what is being asked here, document any assumptions you are making.
+
+The program should take the filename from an argument on the command line. I have not shown you how to do this, you need to look it up.
+
+Marks will be given for dealing with errors eg no argument, filename that does not exist, or is not a text file.
 
 
 
-## Weekly Task 7 
+$ python es.py moby-dick.txt
+116960
+
+## Code explained 
+
+# Weekly Task 8 
+Write a program called plottask.py that displays:
+
+a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, 
+and a plot of the function  h(x)=x3 in the range 0 to 10, 
+on the one set of axes.
+Some marks will be given for making the plot look nice (legend etc).
+
+Please put a copy of the image of the plot (.png file) into the repository
+
+## Code explained 
+
+
+# Contact
+
+Student ID: G00472977
+
+Contact Email: G00472977@atu.ie
+
+
+# Additional Rescources 
+
+Useful template for creating this ReadMe file.
+
+[Reference] https://github.com/othneildrew/Best-README-Template/blob/main/README.md
+
+Useful to help format and use correct syntax for the ReadMe File, particularly for quoting code.
+
+[Reference]  https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
+Python CheatSheet (2025)
+
+[Reference] https://www.geeksforgeeks.org/python-cheat-sheet/
 
 
 
-
-## Weekly Task 8 
-
-
-
-
-
-Sample code so far with refs and notes - need to update
-
-
-import numpy as np
-import matplotlib.pyplot as plt
-
-# Generate 1000 random values from a normal distribution with mean 5 and standard deviation 2
-data = np.random.normal(loc=5, scale=2, size=1000)
-
-# Create an array of x values for the function h(x) = x^3
-x_values = np.linspace(0, 10, 400)
-
-# Compute the y values for h(x) = x^3
-y_values = x_values ** 3  # Correct variable name from 'y_value' to 'y_values'
-
-# Create the plot
-fig, ax = plt.subplots()
-
-# Plot the histogram of the normal distribution
-ax.hist(data, bins=30, density=True, alpha=0.6, color='b', label='Normal Distribution')
-
-# Plot the function h(x) = x^3
-ax.plot(x_values, y_values, color='r', label=r'$h(x) = x^3$')
-
-# Set the title and labels
-ax.set_title('Histogram of Normal Distribution and $h(x) = x^3$')
-ax.set_xlabel('X')
-ax.set_ylabel('Density / Value')
-
-# Show the plot
-plt.show()
