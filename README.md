@@ -44,6 +44,12 @@ The program should:
 
 ## Code explained
 
+The input function will asks the user in the terminal to input the money.
+I am asking them to do so in cents, so I need to convert the money into cents in the code. 
+I can do so using the float function
+#[Reference] https://www.geeksforgeeks.org/taking-input-from-console-in-python/
+#[Reference] https://www.geeksforgeeks.org/float-in-python/
+
 ```
 prompt user for first amount of money in cents
 amount1 =float(input("Enter amount of money in cent:"))
@@ -52,12 +58,24 @@ prompt user for second amount of money in cents
 amount2 = float(input("Enter a second amount of money in cents:"))
 ```
 
+This calculation is then stored as a variable in Sum.
+When this is printed later it should show as decimal to properly count the cents if the input is large enough to convert into euros.
+
+```
+# Add the two amounts and div
+Sum = (amount1 + amount2)/100
+```
 
 ## Resources:
 Documentation for inputting the euro sign using f -strings
 
 [Reference] https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/
 
+Resources used for taking inputs from the terminal
+
+#[Reference] https://www.geeksforgeeks.org/taking-input-from-console-in-python/
+
+#[Reference] https://www.geeksforgeeks.org/float-in-python/
 
 
 
@@ -261,8 +279,13 @@ Useful template for creating this ReadMe file.
 
 [Reference] https://github.com/othneildrew/Best-README-Template/blob/main/README.md
 
+Useful to help format and use correct syntax for the ReadMe File, particularly for quoting code.
+
+[Reference]  https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
 Python CheatSheet (2025)
 
 [Reference] https://www.geeksforgeeks.org/python-cheat-sheet/
+
 
 
