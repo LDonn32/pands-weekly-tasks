@@ -47,8 +47,10 @@ The program should:
 The input function will asks the user in the terminal to input the money.
 I am asking them to do so in cents, so I need to convert the money into cents in the code. 
 I can do so using the float function
-#[Reference] https://www.geeksforgeeks.org/taking-input-from-console-in-python/
-#[Reference] https://www.geeksforgeeks.org/float-in-python/
+
+[Reference] https://www.geeksforgeeks.org/taking-input-from-console-in-python/
+
+[Reference] https://www.geeksforgeeks.org/float-in-python/
 
 ```
 prompt user for first amount of money in cents
@@ -73,9 +75,11 @@ Documentation for inputting the euro sign using f -strings
 
 Resources used for taking inputs from the terminal
 
-#[Reference] https://www.geeksforgeeks.org/taking-input-from-console-in-python/
+[Reference] https://www.geeksforgeeks.org/taking-input-from-console-in-python/
 
-#[Reference] https://www.geeksforgeeks.org/float-in-python/
+Resources used to return a floating-point number from a number 
+
+[Reference] https://www.geeksforgeeks.org/float-in-python/
 
 
 
@@ -91,6 +95,10 @@ XXXXXX7890
 Extra:
 Modify the program to deal with account numbers of any length (yes that is a vague requirement, comment your assumptions)
 
+
+## Code explained 
+
+
 ## Resources:
 
 [Reference] https://docs.python.org/3/library/string.html
@@ -99,7 +107,7 @@ Modify the program to deal with account numbers of any length (yes that is a vag
 
 [Reference] https://www.w3schools.com/python/python_strings.asp
 
-## Code explained 
+
 
 
 # Weekly Task 4
