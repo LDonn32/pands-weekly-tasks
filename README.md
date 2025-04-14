@@ -10,8 +10,11 @@ This ReadMe file will give a description for the the assigned weekly tasks and a
 This section covers what tools were used 
 
 -Python
+
 -Git
+
 -GitHub
+
 -VSCode
 
 
@@ -19,10 +22,15 @@ This section covers what tools were used
 This section covers what libraries/modules were used for the weekly tasks
 
 -Numpy
+
 -Mathplotlib
+
 -Pandas
+
 -Sklearn
+
 -OS
+
 -SYS
 
 # Getting Started
