@@ -9,7 +9,7 @@ This ReadMe file will give a description for the the assigned weekly tasks and a
 # Technologies
 This section covers what tools were used 
 
--Python
+-Anaconda
 
 -Git
 
@@ -18,26 +18,10 @@ This section covers what tools were used
 -VSCode
 
 
-# Built with
-This section covers what libraries/modules were used for the weekly tasks
+# Requirements.txt
+This file contains all the packages and libraries that were imported for the tasks.
 
--Numpy
 
--Mathplotlib
-
--Pandas
-
--Sklearn
-
--OS
-
--SYS
-
-# Getting Started
-
-## Prerequisites
-
-## Installation 
 
 
 
@@ -105,6 +89,36 @@ Modify the program to deal with account numbers of any length (yes that is a vag
 
 
 ## Code explained 
+
+Here I am defining the function and naming it mask_account_number. This will then ask the user for input() and what they input will be stored as a string.
+```
+# Define the function.
+def mask_account_number():
+    # Prompt the user for their 10 digit account number.
+    account_number = input("Please enter your 10-character account number: ")
+```
+I am using len() function == 10 to make sure that the input is exactly 10 characters. I make the  I am using the [-4:] slice which will take from the 4th character from the end to the end.
+```
+    # Check if the input length is 10 characters.
+    if len(account_number) == 10:
+        # Replace first 6 characters with X to mask the digits and keep the last 4 digits
+        masked_account_number = 'XXXXXX' + account_number[-4:]
+```        
+        # Print the masked account number.
+        print("Masked account number:", masked_account_number)
+        
+    else:
+        print("Invalid number! Please ensure to enter a 10-character account number.")
+
+
+
+```
+
+## EXTRA: Modified Code explained 
+
+```
+
+```
 
 
 ## Resources:
