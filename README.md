@@ -63,10 +63,6 @@ The input function will asks the user in the terminal to input the money.
 I am asking them to do so in cents, so I need to convert the money into cents in the code. 
 I can do so using the float function
 
-[Reference] https://www.geeksforgeeks.org/taking-input-from-console-in-python/
-
-[Reference] https://www.geeksforgeeks.org/float-in-python/
-
 ```
 prompt user for first amount of money in cents
 amount1 =float(input("Enter amount of money in cent:"))
@@ -132,14 +128,27 @@ I am using len() function == 10 to make sure that the input is exactly 10 charac
         
     else:
         print("Invalid number! Please ensure to enter a 10-character account number.")
-
-
-
+        
 ```
 
 ## EXTRA: Modified Code explained 
 
+
+To get the length of the account number, I used the len() function which will return the number of characters in the string.
+[Reference] https://www.w3schools.com/python/ref_func_len.asp
+
 ```
+  account_length = len(account_number)
+```
+
+```
+# Check if the account number has at least 4 characters.
+if account_length >= 4:
+    if account_length > 4:
+        # Mask all but the last 4 digits
+        masked_account_number = 'X' * (account_length - 4) + account_number[-4:]
+```
+
 
 
 
@@ -152,6 +161,7 @@ I am using len() function == 10 to make sure that the input is exactly 10 charac
 
 [Reference] https://www.w3schools.com/python/python_strings.asp
 
+[Reference] https://www.w3schools.com/python/ref_func_len.asp
 
 
 
