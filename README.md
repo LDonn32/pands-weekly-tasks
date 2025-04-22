@@ -206,58 +206,100 @@ Please enter a positive integer: 10
 10 5 16 8 4 2 1
 
 
+
+
+## Code explained
+
+After defining my function and prompting user input, I need to ensure that the number the user inputs is a positive integer. I did this by applying an if statement.
+
+```
+# Ensure the number is positive
+if number <= 0:
+    print("Please enter a positive integer.")
+    return
+```
+
+Python Lists Lists are used to store multiple items in a single variable. I used a list in the program to store the sequence of numbers.
+
+```
+# Create a list to store the sequence
+sequence = []
+```
+
+Next I added a while loop. With the while loop, the program can execute a set of statements as long as a condition is true.
+
+```
+# Continue the process until the number becomes 1
+while number != 1:
+
+```
+
+I used the append() method which adds a single element to the end of a list. It modifies the original list in place and does not return a new list.
+
+```
+# Add the current number to the sequence
+sequence.append(number)
+```
+
+I applied the Collatz rule to the program using if and else statements. These statements will check if the number is even or odd and then apply the corresponding rule (If even, divide by 2) or (If odd, multiply by 3 and add 1).
+
+```
+        # Apply the Collatz rule
+        if number % 2 == 0:
+            number = number // 2  # If even, divide by 2
+        else:
+            number = 3 * number + 1  # If odd, multiply by 3 and add 1
+```
+
+
+While number !=1: stops when the number becomes 1, it actually doesn't add it in the sequence, it's the end of the Collatz chain. I need to include 1 manually and I do this by using the Append() Method
+
+```
+    # Add 1 to the sequence as the loop ends when number becomes 1
+    sequence.append(1)
+```
+
+I used the join() method  to convert a list of numbers into a string with spaces between them.
+
+```
+    # Output the sequence as a space-separated string
+    print(" ".join(map(str, sequence)))
+```
+
+
+
 ## Resources:
 
 Information on the Collatz Problem
 
 [Reference] https://www.askpython.com/python/examples/collatz-conjecture
 
-Python input() Function:
+Python input() Function
 
-This function allows the programme to take input from the user, which is used to ask the user for a positive integer.
-
-https://docs.python.org/3/library/functions.html#input
-
-Used in this part of code:
-
-   Prompt the user to input a positive integer
-  number = int(input("Please enter a positive integer: "))
+[Reference] https://docs.python.org/3/library/functions.html#input
 
 Python Lists
-Lists are used to store multiple items in a single variable. Need this in the program to store the sequence of numbers
+
 [Reference] https://www.w3schools.com/python/python_lists.asp
 
 Python List append() Method
-The append() method adds a single element to the end of a list. It modifies the original list in place and does not return a new list.
+
 [Reference] https://www.w3schools.com/python/ref_list_append.asp
 
-The while Loop
-With the while loop the program can execute a set of statements as long as a condition is true.
+The While Loop.
 
 [Reference] https://www.w3schools.com/python/python_while_loops.asp
 [Reference] https://www.youtube.com/watch?time_continue=175&v=ECduJk00mUU&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=Mjg2NjY
 
-Used in this part of code:
+Python Conditional Statements
 
-  while number != 1:
-        # Add the current number to the sequence
-        sequence.append(number)
-
-Python Conditional Statements:
-
-This resource explains how if, else, and elif statements work in Python to handle different conditions like checking if a number is even or odd.
 [Reference] https://www.w3schools.com/python/python_conditions.asp
 
-Used in this part of code:
+Python Append() Method
 
-  if number % 2 == 0:
-            number = number // 2  # If even, divide by 2
-        else:
-            number = 3 * number + 1  # If odd, multiply by 3 and add 1
+[Reference] https://www.w3schools.com/python/ref_list_append.asp
 
-Python String Methods and join():
-
-The join() method is used to convert a list of numbers into a string with spaces between them.
+Python String Methods and join()
 
 [Reference] https://docs.python.org/3/library/stdtypes.html#str.join
 [Reference] https://www.w3schools.com/python/ref_string_join.asp
@@ -266,9 +308,10 @@ Looked at examples others did
 [Reference] https://codereview.stackexchange.com/questions/285429/automate-the-boring-stuff-with-python-the-collatz-sequence
 
 
-Error on code -  IndentationError: expected an indented block after function definition
+Errors on code -  IndentationError: expected an indented block after function definition
 
 Below resources helped to fix, I wasn't spacing/tabing code correctly first time.
+
 [Reference] https://www.youtube.com/watch?v=w5styN3Vaqw
 [Reference] https://stackoverflow.com/questions/4446366/why-am-i-getting-indentationerror-expected-an-indented-block
 
