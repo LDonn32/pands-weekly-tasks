@@ -146,6 +146,7 @@ To get the length of the account number, I used the len() function which will re
 
 
 To modify the program to handle different character lenghts, I used the if, else statement.
+
 [Reference] https://www.programiz.com/python-programming/if-elif-else
 
 When handling account numbers with more than 4 characters, I set the program to only show the last 4 characters. For example, if an account number with 6 characters is entered, the first 2 will be masked and the last 4 will be visable.
@@ -289,6 +290,7 @@ Python List append() Method
 The While Loop.
 
 [Reference] https://www.w3schools.com/python/python_while_loops.asp
+
 [Reference] https://www.youtube.com/watch?time_continue=175&v=ECduJk00mUU&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=Mjg2NjY
 
 Python Conditional Statements
@@ -302,9 +304,11 @@ Python Append() Method
 Python String Methods and join()
 
 [Reference] https://docs.python.org/3/library/stdtypes.html#str.join
+
 [Reference] https://www.w3schools.com/python/ref_string_join.asp
 
 Looked at examples others did
+
 [Reference] https://codereview.stackexchange.com/questions/285429/automate-the-boring-stuff-with-python-the-collatz-sequence
 
 
@@ -313,6 +317,7 @@ Errors on code -  IndentationError: expected an indented block after function de
 Below resources helped to fix, I wasn't spacing/tabing code correctly first time.
 
 [Reference] https://www.youtube.com/watch?v=w5styN3Vaqw
+
 [Reference] https://stackoverflow.com/questions/4446366/why-am-i-getting-indentationerror-expected-an-indented-block
 
 
@@ -344,15 +349,42 @@ Tgif!!! It's Friday woohoo!!
 
 ## Code explained 
 
+To start, I need to import the module datetime. This module handles dates and times and will allow me to get the current day of the week. I will use the Weekday() Method to get the days of the week. 
+The days of the week are represented as such; 0 = Monday, 1 = Tuesday, 2 = Wednesday, 3 = Thursday, 4 = Friday, 5 = Saturday, 6 = Sunday.
+
+```
+# Import datetime module.
+import datetime
+
+# Using the .weekday() method of a datetime.date object, get the current date ( 0 = Monday - 6 = Sunday).
+weekno = datetime.date.today().weekday()
+```
+I use if, else and elif statements to output what day of the week it is. I ensure to match the numbers to their respective days as per the Weekday() Method.
+
+```
+# Using if, else and elif statements, set conditions to print for certain days of the week.
+if weekno == 4: # 4 is friday
+    print("Tgif!!! It's Friday woohoo!!")
+elif weekno < 5:  # less than 0 - 5 inlcuded (except 4 as defined in if)
+    print("Yes, unfortunately today is a weekday")
+else: # 5 Sat, 6 Sun
+    print("It is the weekend, yay!")
+```
+
+
 ## Rescourses: 
 
-Documentation on how to import datetime and use weekday() method
+Documentation on how to import datetime and use Weekday() method
 
 [Reference] https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python
+
+[Reference] https://www.geeksforgeeks.org/python-datetime-weekday-method-with-example/
 
 Documentation on elif, if and else methods used in the code 
 
 [Reference] https://www.w3schools.com/python/python_conditions.asp
+
+
 
 # Weekly task 6
 Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
