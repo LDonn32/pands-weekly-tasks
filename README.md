@@ -139,9 +139,12 @@ To get the length of the account number, I used the len() function which will re
 
 ```
   account_length = len(account_number)
+  
 ```
 
+
 ```
+
 # Check if the account number has at least 4 characters.
 if account_length >= 4:
     if account_length > 4:
