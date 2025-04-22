@@ -137,13 +137,14 @@ I am using len() function == 10 to make sure that the input is exactly 10 charac
 To get the length of the account number, I used the len() function which will return the number of characters in the string.
 [Reference] https://www.w3schools.com/python/ref_func_len.asp
 
+
 ```
   account_length = len(account_number)
   
 ```
 
-
-```
+To modify the program to handle different character lenghts, I used the if, else statement.
+[Reference] https://www.programiz.com/python-programming/if-elif-else
 
 # Check if the account number has at least 4 characters.
 if account_length >= 4:
@@ -166,6 +167,7 @@ if account_length >= 4:
 
 [Reference] https://www.w3schools.com/python/ref_func_len.asp
 
+[Reference] https://www.programiz.com/python-programming/if-elif-else
 
 
 # Weekly Task 4
