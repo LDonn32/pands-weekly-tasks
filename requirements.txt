@@ -1,0 +1,6 @@
+Numpy
+Mathplotlib
+Pandas
+scikit-learn
+OS
+SYS

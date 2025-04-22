@@ -9,7 +9,7 @@ This ReadMe file will give a description for the the assigned weekly tasks and a
 # Technologies
 This section covers what tools were used 
 
--Python
+-Anaconda
 
 -Git
 
@@ -18,27 +18,34 @@ This section covers what tools were used
 -VSCode
 
 
-# Built with
-This section covers what libraries/modules were used for the weekly tasks
+# Requirements.txt
+This file contains all the packages and libraries that were imported for the tasks.
 
--Numpy
 
--Mathplotlib
 
--Pandas
+# Installation/ how to run
 
--Sklearn
+Clone the repository:
 
--OS
+```
+git clone https://github.com/LDonn32/pands-weekly-tasks.git
+```
 
--SYS
+Install requirements:
 
-# Getting Started
+```
+pip install -r requirements.txt
+```
 
-## Prerequisites
+Run the desired program:
 
-## Installation 
+```
+python banks.py
+```
 
+```
+python accounts.py
+```
 
 
 # Weekly Task 02
@@ -55,10 +62,6 @@ The program should:
 The input function will asks the user in the terminal to input the money.
 I am asking them to do so in cents, so I need to convert the money into cents in the code. 
 I can do so using the float function
-
-[Reference] https://www.geeksforgeeks.org/taking-input-from-console-in-python/
-
-[Reference] https://www.geeksforgeeks.org/float-in-python/
 
 ```
 prompt user for first amount of money in cents
@@ -106,6 +109,71 @@ Modify the program to deal with account numbers of any length (yes that is a vag
 
 ## Code explained 
 
+Here I am defining the function and naming it mask_account_number. This will then ask the user for input() and what they input will be stored as a string.
+```
+# Define the function.
+def mask_account_number():
+    # Prompt the user for their 10 digit account number.
+    account_number = input("Please enter your 10-character account number: ")
+```
+I am using len() function == 10 to make sure that the input is exactly 10 characters. I make the  I am using the [-4:] slice which will take from the 4th character from the end to the end.
+```
+    # Check if the input length is 10 characters.
+    if len(account_number) == 10:
+        # Replace first 6 characters with X to mask the digits and keep the last 4 digits
+        masked_account_number = 'XXXXXX' + account_number[-4:]
+```        
+        # Print the masked account number.
+        print("Masked account number:", masked_account_number)
+        
+    else:
+        print("Invalid number! Please ensure to enter a 10-character account number.")
+        
+
+
+## EXTRA: Modified Code explained 
+
+
+To get the length of the account number, I used the len() function which will return the number of characters in the string.
+
+[Reference] https://www.w3schools.com/python/ref_func_len.asp
+
+
+```
+  account_length = len(account_number)
+  
+```
+
+
+To modify the program to handle different character lenghts, I used the if, else statement.
+[Reference] https://www.programiz.com/python-programming/if-elif-else
+
+When handling account numbers with more than 4 characters, I set the program to only show the last 4 characters. For example, if an account number with 6 characters is entered, the first 2 will be masked and the last 4 will be visable.
+
+```
+# Check if the account number has at least 4 characters.
+if account_length >= 4:
+    if account_length > 4:
+        # Mask all but the last 4 digits
+     masked_account_number = 'X' * (account_length - 4) + account_number[-4:]
+```
+
+When handling account numbers with exactly 4 characters, I decided to show the whole number rather than mask the only 4 characters. My thinking behind this is so that the account number is readable in the output terminal. I contemplated masking 2 characters instead of 4 for these cases, but my assumption would be for most bank accounts is that you need the last 4 characters to identify a users bank account.
+
+```
+else:
+    # If the account number has exactly 4 digits, show the whole number
+    masked_account_number = account_number
+```
+
+I took the same logic from above and applied it to if there are account numbers with less than 4 characters. I also added in a message for the user for feedback, incase they missed a number. 
+
+```
+else:
+    # If the account number has fewer than 4 digits, show the whole account number
+    print("Account number is too short, showing the whole number:", account_number)
+```
+
 
 ## Resources:
 
@@ -115,7 +183,9 @@ Modify the program to deal with account numbers of any length (yes that is a vag
 
 [Reference] https://www.w3schools.com/python/python_strings.asp
 
+[Reference] https://www.w3schools.com/python/ref_func_len.asp
 
+[Reference] https://www.programiz.com/python-programming/if-elif-else
 
 
 # Weekly Task 4
@@ -136,58 +206,100 @@ Please enter a positive integer: 10
 10 5 16 8 4 2 1
 
 
+
+
+## Code explained
+
+After defining my function and prompting user input, I need to ensure that the number the user inputs is a positive integer. I did this by applying an if statement.
+
+```
+# Ensure the number is positive
+if number <= 0:
+    print("Please enter a positive integer.")
+    return
+```
+
+Python Lists Lists are used to store multiple items in a single variable. I used a list in the program to store the sequence of numbers.
+
+```
+# Create a list to store the sequence
+sequence = []
+```
+
+Next I added a while loop. With the while loop, the program can execute a set of statements as long as a condition is true.
+
+```
+# Continue the process until the number becomes 1
+while number != 1:
+
+```
+
+I used the append() method which adds a single element to the end of a list. It modifies the original list in place and does not return a new list.
+
+```
+# Add the current number to the sequence
+sequence.append(number)
+```
+
+I applied the Collatz rule to the program using if and else statements. These statements will check if the number is even or odd and then apply the corresponding rule (If even, divide by 2) or (If odd, multiply by 3 and add 1).
+
+```
+        # Apply the Collatz rule
+        if number % 2 == 0:
+            number = number // 2  # If even, divide by 2
+        else:
+            number = 3 * number + 1  # If odd, multiply by 3 and add 1
+```
+
+
+While number !=1: stops when the number becomes 1, it actually doesn't add it in the sequence, it's the end of the Collatz chain. I need to include 1 manually and I do this by using the Append() Method
+
+```
+    # Add 1 to the sequence as the loop ends when number becomes 1
+    sequence.append(1)
+```
+
+I used the join() method  to convert a list of numbers into a string with spaces between them.
+
+```
+    # Output the sequence as a space-separated string
+    print(" ".join(map(str, sequence)))
+```
+
+
+
 ## Resources:
 
 Information on the Collatz Problem
 
 [Reference] https://www.askpython.com/python/examples/collatz-conjecture
 
-Python input() Function:
+Python input() Function
 
-This function allows the programme to take input from the user, which is used to ask the user for a positive integer.
-
-https://docs.python.org/3/library/functions.html#input
-
-Used in this part of code:
-
-   Prompt the user to input a positive integer
-  number = int(input("Please enter a positive integer: "))
+[Reference] https://docs.python.org/3/library/functions.html#input
 
 Python Lists
-Lists are used to store multiple items in a single variable. Need this in the program to store the sequence of numbers
+
 [Reference] https://www.w3schools.com/python/python_lists.asp
 
 Python List append() Method
-The append() method adds a single element to the end of a list. It modifies the original list in place and does not return a new list.
+
 [Reference] https://www.w3schools.com/python/ref_list_append.asp
 
-The while Loop
-With the while loop the program can execute a set of statements as long as a condition is true.
+The While Loop.
 
 [Reference] https://www.w3schools.com/python/python_while_loops.asp
 [Reference] https://www.youtube.com/watch?time_continue=175&v=ECduJk00mUU&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=Mjg2NjY
 
-Used in this part of code:
+Python Conditional Statements
 
-  while number != 1:
-        # Add the current number to the sequence
-        sequence.append(number)
-
-Python Conditional Statements:
-
-This resource explains how if, else, and elif statements work in Python to handle different conditions like checking if a number is even or odd.
 [Reference] https://www.w3schools.com/python/python_conditions.asp
 
-Used in this part of code:
+Python Append() Method
 
-  if number % 2 == 0:
-            number = number // 2  # If even, divide by 2
-        else:
-            number = 3 * number + 1  # If odd, multiply by 3 and add 1
+[Reference] https://www.w3schools.com/python/ref_list_append.asp
 
-Python String Methods and join():
-
-The join() method is used to convert a list of numbers into a string with spaces between them.
+Python String Methods and join()
 
 [Reference] https://docs.python.org/3/library/stdtypes.html#str.join
 [Reference] https://www.w3schools.com/python/ref_string_join.asp
@@ -196,9 +308,10 @@ Looked at examples others did
 [Reference] https://codereview.stackexchange.com/questions/285429/automate-the-boring-stuff-with-python-the-collatz-sequence
 
 
-Error on code -  IndentationError: expected an indented block after function definition
+Errors on code -  IndentationError: expected an indented block after function definition
 
 Below resources helped to fix, I wasn't spacing/tabing code correctly first time.
+
 [Reference] https://www.youtube.com/watch?v=w5styN3Vaqw
 [Reference] https://stackoverflow.com/questions/4446366/why-am-i-getting-indentationerror-expected-an-indented-block
 
