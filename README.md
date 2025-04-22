@@ -135,6 +135,7 @@ I am using len() function == 10 to make sure that the input is exactly 10 charac
 
 
 To get the length of the account number, I used the len() function which will return the number of characters in the string.
+
 [Reference] https://www.w3schools.com/python/ref_func_len.asp
 
 
@@ -155,6 +156,7 @@ if account_length >= 4:
     if account_length > 4:
         # Mask all but the last 4 digits
      masked_account_number = 'X' * (account_length - 4) + account_number[-4:]
+```
 
 When handling account numbers with exactly 4 characters, I decided to show the whole number rather than mask the only 4 characters. My thinking behind this is so that the account number is readable in the output terminal. I contemplated masking 2 characters instead of 4 for these cases, but my assumption would be for most bank accounts is that you need the last 4 characters to identify a users bank account.
 
@@ -162,6 +164,7 @@ When handling account numbers with exactly 4 characters, I decided to show the w
 else:
     # If the account number has exactly 4 digits, show the whole number
     masked_account_number = account_number
+```
 
 I took the same logic from above and applied it to if there are account numbers with less than 4 characters. I also added in a message for the user for feedback, incase they missed a number. 
 
@@ -169,7 +172,7 @@ I took the same logic from above and applied it to if there are account numbers 
 else:
     # If the account number has fewer than 4 digits, show the whole account number
     print("Account number is too short, showing the whole number:", account_number)
-
+```
 
 
 ## Resources:
