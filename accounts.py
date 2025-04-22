@@ -61,7 +61,6 @@ def mask_account_number():
     account_length = len(account_number)
 
 
-
     # Check if the account number has at least 4 characters.
     if account_length >= 4:
         if account_length > 4:
