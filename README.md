@@ -399,7 +399,7 @@ This is a more difficult task than some of the others, but will be marked equall
 
 ## Newton's Formula 
 
-
+$ new guess= 1/2 (old guess+  n/ old guess) $
 
 
 ## Code explained 
