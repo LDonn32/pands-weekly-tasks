@@ -397,8 +397,62 @@ This is to demonstrate that you can research and code a process (If you really n
 
 This is a more difficult task than some of the others, but will be marked equally, so only do as much work on this as you feel comfortable.
 
+## Newton's Formula 
+
+
+
+
 ## Code explained 
 
+I define the function as sqrt as requested in the task. The function will take in two inputs, N and 1.  N represents the number of the square root I am trying to find. 1 represents the tolerance. The tolorence is how close 
+
+```
+# Define function to return the square root of a number using Newton's method.
+def sqrt(n, l):
+
+```
+
+I am guessing that the square root is n. I am using this as a starting point. I also am using count to keep track of how many times I loop the program before I start a while loop. 
+
+```
+    # Assuming the sqrt of n as n only
+    x = n
+
+    # To count the number of iterations
+    count = 0
+
+```
+I start an infinate while loop that will count
+
+```
+    while True:
+        count += 1
+
+
+```
+
+Here is where I add Newton's formula
+```
+        # Calculate more closed x
+        root = 0.5 * (x + (n / x))
+```
+
+## Rescourses: 
+
+
+Python Count() Method
+
+[Reference] https://www.geeksforgeeks.org/python-list-count-method/
+
+Python While True
+
+[Reference] https://www.geeksforgeeks.org/how-to-use-while-true-in-python/
+
+Using Count() with a while loop
+
+[Reference] https://stackoverflow.com/questions/20255372/record-how-many-times-a-while-loop-runs-python
+
+[Reference] https://bobbyhadz.com/blog/python-count-in-for-loop
 
 # Weekly Task 7 
 Write a program that reads in a text file and outputs the number of e's it contains. Think about what is being asked here, document any assumptions you are making.
