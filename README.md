@@ -3,7 +3,7 @@
 Author: Laura Donnelly
 
 
-This ReadMe file will give a description for the the assigned weekly tasks and additional information and insights for the 2025 Programming and Scripting Module. 
+This ReadMe file will give a description for the the assigned weekly tasks, show how to run the programs, state what technologies and libraries were used, present additional information and insights for the 2025 Programming and Scripting Module. 
 
 
 # Technologies
@@ -37,7 +37,7 @@ Install requirements:
 pip install -r requirements.txt
 ```
 
-Run the desired program:
+Run the desired program from the weekly tasks:
 
 ```
 python banks.py
@@ -47,8 +47,28 @@ python banks.py
 python accounts.py
 ```
 
+```
+python collatz.py
+```
 
-# Weekly Task 02
+```
+python weekday.py
+```
+
+```
+python squareroot.py
+
+NOTE for running moby dick file
+```
+python es.py
+```
+
+```
+plottask.py
+```
+
+
+# Weekly Task 02 - bank.py 
 Write a program called bank.py 
 
 The program should:
@@ -94,7 +114,7 @@ Resources used to return a floating-point number from a number
 
 
 
-# Weekly Task 03
+# Weekly Task 03 - accounts.py
 
 Bank account numbers can stored as 10 character strings, for security reasons some applications only display the last 4 characters (with the other other characters replaced with Xs).
 
@@ -189,7 +209,7 @@ else:
 [Reference] https://www.programiz.com/python-programming/if-elif-else
 
 
-# Weekly Task 4
+# Weekly Task 4 - collatz.py
 Write a program, called collatz.py, that asks the user to input any positive integer and outputs the successive values of the following calculation.
 
 At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one.
@@ -321,31 +341,33 @@ Below resources helped to fix, I wasn't spacing/tabing code correctly first time
 [Reference] https://stackoverflow.com/questions/4446366/why-am-i-getting-indentationerror-expected-an-indented-block
 
 
-# Weekly Task 05
+# Weekly Task 05 - weekday.py
 Write a program that outputs whether or not today is a weekday. (The program should be called weekday.py)
 
 You will need to search the web to find how you work out what day it is.
 
 An example of running this program on a Thursday is given below.
 
+```
 $ python weekday.py
 Yes, unfortunately today is a weekday.
-
-
+```
 An example of running it on a Saturday is as follows:
 
+```
 $ python weekday.py
 It is the weekend, yay!
-
+```
 There is no user input.
-
 
 ## Extra 
 Modifed the program to include a third option for Friday. 
 An example of running it on a Friday is as follows:
 
+```
 $ python weekday.py
 Tgif!!! It's Friday woohoo!!
+```
 
 ## Code explained 
 
@@ -506,7 +528,7 @@ Using the if and else Statements
 
 
 
-# Weekly Task 7 
+# Weekly Task 7 - es.py
 Write a program that reads in a text file and outputs the number of e's it contains. Think about what is being asked here, document any assumptions you are making.
 
 The program should take the filename from an argument on the command line. I have not shown you how to do this, you need to look it up.
@@ -520,17 +542,58 @@ $ python es.py moby-dick.txt
 
 ## Code explained 
 
-# Weekly Task 8 
+# Weekly Task 8 - plottask.py
 Write a program called plottask.py that displays:
 
 a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, 
 and a plot of the function  h(x)=x3 in the range 0 to 10, 
 on the one set of axes.
+
 Some marks will be given for making the plot look nice (legend etc).
 
 Please put a copy of the image of the plot (.png file) into the repository
 
 ## Code explained 
+
+To generate a histogram, I use numpy and matplotlib libraries. I import pyplot which I use to plot the function.
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+
+I create the normal distribution next with the information given in the task: 1000 values, mean=5, std=2.
+
+```
+
+# Create a normal distribution. 
+mean = 5
+std_dev = 2
+num_samples = 1000
+
+```
+
+I use the random.normal function in numpy to generate random data for my histogram
+
+
+
+# Generate the random data.
+data = np.random.normal(mean, std_dev, num_samples)
+
+
+
+
+
+## Rescourses: 
+
+Numpy Random Function.
+
+[Reference] https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html
+
+Matplotlib Pyplot Histogram.
+
+[Reference] https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html
+
 
 
 # Contact
