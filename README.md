@@ -386,7 +386,7 @@ Documentation on elif, if and else methods used in the code
 
 
 
-# Weekly task 6
+# Weekly task 6 - squareroot.py
 Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
 
 You should create a function called <tt>sqrt</tt> that does this.
@@ -397,7 +397,113 @@ This is to demonstrate that you can research and code a process (If you really n
 
 This is a more difficult task than some of the others, but will be marked equally, so only do as much work on this as you feel comfortable.
 
+
+
 ## Code explained 
+
+I define the function as sqrt as requested in the task. The function will take in two inputs, N and 1.  N represents the number of the square root I am trying to find. 1 represents the tolerance. The tolorence is how accurate I want the program to be. I will set it as up to 5 decimal points later in the code for accuracy.
+
+```
+# Define function to return the square root of a number using Newton's method.
+def sqrt(n, l):
+
+```
+
+I am guessing that the square root is n. I am using this as a starting point. I also am using count to keep track of how many times I loop the program before I start a while loop. 
+
+```
+    # Assuming the sqrt of n as n only
+    x = n
+
+    # To count the number of iterations
+    count = 0
+
+```
+I start an infinate while loop that will count.
+
+```
+    while True:
+        count += 1
+```
+
+Here is where I add Newton's formula.
+```
+        # Calculate more closed x
+        root = 0.5 * (x + (n / x))
+```
+I compare how much the new guess root differs from the old guess x. If the change is smaller than l, it means it is close enough, so it breaks the loop. The Python abs() function will return the absolute value. Makes sure the number remains a positive integer. 
+
+```
+        # Check for closeness
+        if abs(root - x) < l:
+            break
+```
+
+I update the root so that if the number doesnt get close enough, it will do another guess. I use return function to return the closest value of root.
+
+```
+        # Update root
+        x = root
+
+    return root
+```
+
+Next I need to get user input. I do this by asking the user to input a positive interger. I then convert it to a string using the float() function.
+
+```
+# Take a positive floating-point number as input
+n = float(input("Enter a positive number: "))
+```
+
+I use an if statements to make sure the user input is in fact a positive number. If the user enters 0 or a negative number it will show the error message "Please enter a positive number". 
+
+```
+# Ensure that the number is positive
+if n <= 0:
+    print("Please enter a positive number.")
+```
+
+I use else statements to run the function if the number is valid. I set the tolorenece level as 0.00001 to get as close as possible to the root number. Then I call the sqrt function and print out results. 
+
+```
+else:
+    l = 0.00001  # Tolerance for the approximation
+    print(f"Approximate square root of {n} is {sqrt(n, l)}")
+```
+
+## Rescourses: 
+
+I used this resource as starting point for my code. 
+
+[Reference] https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/
+
+Python Count() Method
+
+[Reference] https://www.geeksforgeeks.org/python-list-count-method/
+
+Python While True
+
+[Reference] https://www.geeksforgeeks.org/how-to-use-while-true-in-python/
+
+Using Count() with a while loop
+
+[Reference] https://stackoverflow.com/questions/20255372/record-how-many-times-a-while-loop-runs-python
+
+[Reference] https://bobbyhadz.com/blog/python-count-in-for-loop
+
+Using abs() Function
+
+[Reference] https://www.geeksforgeeks.org/abs-in-python/
+
+Using Float() Function
+
+[Reference] https://www.geeksforgeeks.org/float-in-python/
+
+Using the if and else Statements
+
+[Reference] https://www.w3schools.com/python/python_conditions.asp
+
+
 
 
 # Weekly Task 7 
