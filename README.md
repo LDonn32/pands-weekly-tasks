@@ -57,8 +57,10 @@ python weekday.py
 
 ```
 python squareroot.py
+```
 
 NOTE for running moby dick file
+
 ```
 python es.py
 ```
@@ -130,6 +132,7 @@ Modify the program to deal with account numbers of any length (yes that is a vag
 ## Code explained 
 
 Here I am defining the function and naming it mask_account_number. This will then ask the user for input() and what they input will be stored as a string.
+
 ```
 # Define the function.
 def mask_account_number():
@@ -557,42 +560,144 @@ Please put a copy of the image of the plot (.png file) into the repository
 
 To generate a histogram, I use numpy and matplotlib libraries. I import pyplot which I use to plot the function.
 
+```
 import numpy as np
 import matplotlib.pyplot as plt
-
+```
 
 
 I create the normal distribution next with the information given in the task: 1000 values, mean=5, std=2.
 
 ```
-
 # Create a normal distribution. 
 mean = 5
 std_dev = 2
 num_samples = 1000
-
 ```
 
-I use the random.normal function in numpy to generate random data for my histogram
 
+I use the random.normal function in numpy to generate random data for my histogram.
 
-
+```
 # Generate the random data.
 data = np.random.normal(mean, std_dev, num_samples)
+```
 
+I am using plt.subplot() to show the histogram and function plot side by side. I follow the guidance from the Matplot lib Histogram documentation to plot out my histogram. Using plt.hist() I divide the data in 30 bins to make the histogram tidy, I set the label as Normal Distribution which will reflect on the legend later.  I set the title of the histogram with plt.title(), as well as the names of the x and y axis using plt.xlabel() and plt.ylable() respectively. 
 
+Working with histograms I need to make sure my axis are correctly set up. I set the xlabel as 'Value'. This sets the x axis to show the values or bins.  I set the y label as 'Frequency'. This sets the y axis to shows the frequency of how often the data shows up in the range. 
 
+```
+# Plot the histogram.
+# 1 row, 2 columns, first subplot.
+plt.subplot(1, 2, 1)
 
+plt.hist(data, bins=30, color='pink', edgecolor='purple', label='Normal Distribution')
+plt.title('Histogram of Normal Distribution')
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+```
+
+I add the legend to the Histogram. I use loc='upper left' to try not be in the way of the graphs data.
+
+```
+# Add a legend to the histogram.
+plt.legend(loc='upper left')
+```
+
+I plot the function using the np.arange() function, then I have to create the x values for the rang of 0 - 10 as instructed in the task. I add a step of 0.1. I selected a smaller step size as it gives me a smoother visual for the graph. I tested with a step of 1 and it was hard to read.
+
+```
+# Plot the function h(x) = x^3 using np.arange().
+# Create x values from 0 to 10 with a step of 0.1.
+x_values = np.arange(0, 10, 0.1)  
+```
+
+I calculate the function h(x)=x3. I need to take x, and raise it to the power of 3. I do this by using the exponentiation operator **. 
+```
+# Calculate y = x^3.
+y_value = x_values**3  
+```
+
+I follow the guidance from the Matplotlib Plot documentation to plot out my function plot. Same as when I was plotting my histogram, I  add my x and y values, I set the colour, label the function and the title. I add a legend the same way as I did for the histogram.
+
+```
+# Create the function plot.
+# 1 row, 2 columns, second subplot.
+plt.subplot(1, 2, 2)  
+
+plt.plot(x_values, y_value, color='purple', label='h(x) = x^3')
+plt.title('Plot of h(x) = x^3')
+plt.xlabel('x')
+plt.ylabel('h(x)')
+
+# Add a legend to the function plot.
+plt.legend(loc='upper left' )
+```
+I save the histogram and plot as a PNG using plt.save fig. Note: I had to change the flow of plt.show() and plt.savefig(). If I ran plt.show() first, the saved file would come up blank. They were interferring with each other. So I have plt.savefig() come first. 
+
+```
+# Save the histogram and plot.
+plt.savefig('plottask.png')
+
+```
+Using subplots means that the graps could overlap at the axis, title etc. I use tight_layout() function to prevent any overlap and keep the grap looking tidy. Then I use plt.show() to show the graph. 
+```
+# Adjust layout to avoid any overlap of the histogram or plot.
+plt.tight_layout()
+
+# Display the plots.
+plt.show()
+```
 
 ## Rescourses: 
+
+Information on Histograms, particularly useful for information on the Horizontal and Vertical axis.
+
+[Reference] https://www.geeksforgeeks.org/histogram/
+
+Datacamp Guide to Histograms. 
+
+[Reference] https://www.datacamp.com/blog/frequency-histograms?utm_source=chatgpt.com
 
 Numpy Random Function.
 
 [Reference] https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html
 
-Matplotlib Pyplot Histogram.
+Mathplotlib Subplot Documentation. 
+
+[Reference] https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot.html
+
+Matplotlib Pyplot Histogram Documenation.
 
 [Reference] https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html
+
+Add legend to Histogram.
+
+[Reference] https://www.geeksforgeeks.org/matplotlib-pyplot-legend-in-python/
+
+Numpy Arrange Function. 
+
+[Reference] https://numpy.org/doc/stable/reference/generated/numpy.arange.html
+
+[Reference] https://www.geeksforgeeks.org/numpy-arrange-in-python/
+
+Python Program to Find Cube of a Number (Using the exponentiation operator) .
+
+[Reference] https://www.geeksforgeeks.org/python-program-to-find-cube-of-a-number/
+
+Matplotlib Pyplot Plot Documenation.
+
+[Reference] https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html
+
+Matplotlib Savefig Function.
+
+[Reference] https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html
+
+Tight Layout Funcion. 
+
+[Reference] https://www.geeksforgeeks.org/matplotlib-pyplot-tight_layout-in-python/
+
 
 
 
