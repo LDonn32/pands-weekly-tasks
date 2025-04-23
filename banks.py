@@ -1,9 +1,5 @@
 # banks.py
-
-# This programme should do the following:
-# prompts the user and read in two money amounts (in cent)
-# Add the two amounts 
-# Print out the answer in a human readable format with the euro sign and decimal point and cent of the amount
+# Weekly Task 0264
 
 
 # Author: Laura Donnelly
