@@ -1,19 +1,11 @@
-# Write a program that takes 
-# a positive floating-point number as input and 
-# outputs an approximation of its square root.
-
-# create a function called <tt>sqrt</tt> that does this.
-
+# squareroot.py
+# Weekly Task 06
 
 # Author: Laura Donnelly
 
 
-#[Link] appropriated some code from below link. Modified it to take user input 
-# https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/
-
-# Function to return the square root of
-# a number using Newton's method
-def squareRoot(n, l):
+# Define function to return the square root of a number using Newton's method.
+def sqrt(n, l):
     # Assuming the sqrt of n as n only
     x = n
 
@@ -43,7 +35,7 @@ if n <= 0:
     print("Please enter a positive number.")
 else:
     l = 0.00001  # Tolerance for the approximation
-    print(f"Approximate square root of {n} is {squareRoot(n, l)}")
+    print(f"Approximate square root of {n} is {sqrt(n, l)}")
 
 
 
