@@ -397,9 +397,6 @@ This is to demonstrate that you can research and code a process (If you really n
 
 This is a more difficult task than some of the others, but will be marked equally, so only do as much work on this as you feel comfortable.
 
-## Newton's Formula 
-
-$ new guess= 1/2 (old guess+  n/ old guess) $
 
 
 ## Code explained 
@@ -422,7 +419,7 @@ I am guessing that the square root is n. I am using this as a starting point. I 
     count = 0
 
 ```
-I start an infinate while loop that will count
+I start an infinate while loop that will count.
 
 ```
     while True:
@@ -431,10 +428,49 @@ I start an infinate while loop that will count
 
 ```
 
-Here is where I add Newton's formula
+Here is where I add Newton's formula.
 ```
         # Calculate more closed x
         root = 0.5 * (x + (n / x))
+```
+I compare how much the new guess root differs from the old guess x. If the change is smaller than l, it means it is close enough, so it breaks the loop. The Python abs() function will return the absolute value. Makes sure the number remains a positive integer. 
+
+```
+
+        # Check for closeness
+        if abs(root - x) < l:
+            break
+```
+
+I update the root so that if the number doesnt get close enough, it will do another guess. I use return function to return the closest value of root.
+
+```
+        # Update root
+        x = root
+
+    return root
+
+```
+
+Next I need to get user input. I do this by asking the user to input a positive interger. I then convert it to a string using the float() function.
+
+```
+# Take a positive floating-point number as input
+n = float(input("Enter a positive number: "))
+
+```
+I use an if statements to make sure the user input is in fact a positive number. If the user enters 0 or a negative number it will show the error message "Please enter a positive number". 
+```
+# Ensure that the number is positive
+if n <= 0:
+    print("Please enter a positive number.")
+```
+I use else statements to run the function if the number is valid. I set the tolorenece level as 0.00001 to get as close as possible to the root number. Then I call the sqrt function and print out results. 
+```
+else:
+    l = 0.00001  # Tolerance for the approximation
+    print(f"Approximate square root of {n} is {sqrt(n, l)}")
+
 ```
 
 ## Rescourses: 
@@ -453,6 +489,21 @@ Using Count() with a while loop
 [Reference] https://stackoverflow.com/questions/20255372/record-how-many-times-a-while-loop-runs-python
 
 [Reference] https://bobbyhadz.com/blog/python-count-in-for-loop
+
+Using abs() Function
+
+[Reference] https://www.geeksforgeeks.org/abs-in-python/
+
+Using Float() Function
+
+[Reference] https://www.geeksforgeeks.org/float-in-python/
+
+Using the if and else Statements
+
+[Reference] https://www.w3schools.com/python/python_conditions.asp
+
+
+
 
 # Weekly Task 7 
 Write a program that reads in a text file and outputs the number of e's it contains. Think about what is being asked here, document any assumptions you are making.
