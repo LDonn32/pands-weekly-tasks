@@ -317,6 +317,7 @@ Python List append() Method.
 [W3schools] (https://www.w3schools.com/python/ref_list_append.asp)
 
 The While Loop.
+
 [W3schools] (https://www.w3schools.com/python/python_while_loops.asp)
 
 [Youtube] (https://www.youtube.com/watch?time_continue=175&v=ECduJk00mUU&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=Mjg2NjY)
