@@ -314,39 +314,39 @@ Python Lists.
 
 Python List append() Method.
 
-[W3schools] https://www.w3schools.com/python/ref_list_append.asp
+[W3schools] (https://www.w3schools.com/python/ref_list_append.asp)
 
 The While Loop.
-[W3schools] https://www.w3schools.com/python/python_while_loops.asp
+[W3schools] (https://www.w3schools.com/python/python_while_loops.asp)
 
-[You] https://www.youtube.com/watch?time_continue=175&v=ECduJk00mUU&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=Mjg2NjY
+[Youtube] (https://www.youtube.com/watch?time_continue=175&v=ECduJk00mUU&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=Mjg2NjY)
 
-Python Conditional Statements
+Python Conditional Statements.
 
-[Reference] https://www.w3schools.com/python/python_conditions.asp
+[W3schools] (https://www.w3schools.com/python/python_conditions.asp)
 
-Python Append() Method
+Python Append() Method.
 
-[Reference] https://www.w3schools.com/python/ref_list_append.asp
+[W3schools] (https://www.w3schools.com/python/ref_list_append.asp)
 
-Python String Methods and join()
+Python String Methods and join().
 
-[Reference] https://docs.python.org/3/library/stdtypes.html#str.join
+[Python] (https://docs.python.org/3/library/stdtypes.html#str.join)
 
-[Reference] https://www.w3schools.com/python/ref_string_join.asp
+[W3schools] (https://www.w3schools.com/python/ref_string_join.asp)
 
-Looked at examples others did
+Looked at examples others did.
 
-[Reference] https://codereview.stackexchange.com/questions/285429/automate-the-boring-stuff-with-python-the-collatz-sequence
+[Code Review] (https://codereview.stackexchange.com/questions/285429/automate-the-boring-stuff-with-python-the-collatz-sequence)
 
 
 Errors on code -  IndentationError: expected an indented block after function definition
 
 Below resources helped to fix, I wasn't spacing/tabing code correctly first time.
 
-[Reference] https://www.youtube.com/watch?v=w5styN3Vaqw
+[Youtub] (https://www.youtube.com/watch?v=w5styN3Vaqw)
 
-[Reference] https://stackoverflow.com/questions/4446366/why-am-i-getting-indentationerror-expected-an-indented-block
+[Stackoverflow] https://stackoverflow.com/questions/4446366/why-am-i-getting-indentationerror-expected-an-indented-block
 
 
 # Weekly Task 05 - weekday.py
@@ -406,13 +406,13 @@ else: # 5 Sat, 6 Sun
 
 Documentation on how to import datetime and use Weekday() method
 
-[Reference] https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python
+[Stackoverflow] (https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python)
 
-[Reference] https://www.geeksforgeeks.org/python-datetime-weekday-method-with-example/
+[Geeksforgeeks] (https://www.geeksforgeeks.org/python-datetime-weekday-method-with-example/)
 
 Documentation on elif, if and else methods used in the code 
 
-[Reference] https://www.w3schools.com/python/python_conditions.asp
+[W3schools] (https://www.w3schools.com/python/python_conditions.asp)
 
 
 
@@ -505,33 +505,33 @@ else:
 
 I used this resource as starting point for my code. 
 
-[Reference] https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/
+[Geeksforgeeks](https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/)
 
 Python Count() Method
 
-[Reference] https://www.geeksforgeeks.org/python-list-count-method/
+[Geeksforgeeks](https://www.geeksforgeeks.org/python-list-count-method/)
 
 Python While True
 
-[Reference] https://www.geeksforgeeks.org/how-to-use-while-true-in-python/
+[Geeksforgeeks](https://www.geeksforgeeks.org/how-to-use-while-true-in-python/)
 
 Using Count() with a while loop
 
-[Reference] https://stackoverflow.com/questions/20255372/record-how-many-times-a-while-loop-runs-python
+[Stackoverflow](https://stackoverflow.com/questions/20255372/record-how-many-times-a-while-loop-runs-python)
 
-[Reference] https://bobbyhadz.com/blog/python-count-in-for-loop
+[Bobbyhadz.com](https://bobbyhadz.com/blog/python-count-in-for-loop)
 
 Using abs() Function
 
-[Reference] https://www.geeksforgeeks.org/abs-in-python/
+[Geeksforgeeks](https://www.geeksforgeeks.org/abs-in-python/)
 
 Using Float() Function
 
-[Reference] https://www.geeksforgeeks.org/float-in-python/
+[Geeksforgeeks](https://www.geeksforgeeks.org/float-in-python/)
 
 Using the if and else Statements
 
-[Reference] https://www.w3schools.com/python/python_conditions.asp
+[W3schools](https://www.w3schools.com/python/python_conditions.asp)
 
 
 
@@ -662,7 +662,7 @@ Information on OS Exceptions.
 
 Error Handling ( Try, except, else and finally)
 
-[Reference] https://www.w3schools.com/python/python_try_except.asp
+[W3schools] (https://www.w3schools.com/python/python_try_except.asp)
 
 [Reference] https://realpython.com/python-exceptions/
 
@@ -684,11 +684,11 @@ Resource when to use UTF-8.
 
 Read File() Method.
 
-[Reference] https://www.w3schools.com/python/ref_file_read.asp
+[W3schools] https://www.w3schools.com/python/ref_file_read.asp
 
 String Count Method.
 
-[Reference] https://www.w3schools.com/python/ref_string_count.asp
+[W3schools] https://www.w3schools.com/python/ref_string_count.asp
 
 SYS exit() Function.
 
