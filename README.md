@@ -17,13 +17,13 @@ This ReadMe file for the 2025 Programming and Scripting Module for the H. Dip in
 # Technologies
 This section covers what tools were used 
 
--Anaconda [(https://www.anaconda.com/download)]
+[Anaconda] (https://www.anaconda.com/download)
 
--Git
+[Git] (https://git-scm.com/downloads)
 
--GitHub
+[GitHub] (https://github.com/)
 
--VSCode
+[VSCode] (https://code.visualstudio.com/)
 
 
 # Requirements.txt
