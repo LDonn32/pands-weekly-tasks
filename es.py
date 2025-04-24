@@ -53,6 +53,7 @@ def main():
 
     # Call the function to count 'e's.
     number_of_es = count_e(filename)
+    # Print out the results.
     print(f"The file '{filename}' contains {number_of_es} lowercase 'e' characters.")
 
 
