@@ -5,17 +5,18 @@ Author: Laura Donnelly
 
 This ReadMe file for the 2025 Programming and Scripting Module for the H. Dip in Science in Data Analytics, ATU will do the following:
 
-- Give a description for each of the assigned weekly tasks.
+* Give a description for each of the assigned weekly tasks.
   
-- Show how to run the programs.
+* Show how to run the programs.
   
-- State what technologies and libraries were used.
+* State what technologies and libraries were used.
   
-- Present additional information, comments and insights for code used in each of the tasks. 
+* Present additional information, comments and insights for code used in each of the tasks. 
 
 
 # Technologies
-This section covers what tools were used 
+
+## This section covers what tools were used: 
 
 [Anaconda] (https://www.anaconda.com/download)
 
@@ -114,17 +115,18 @@ Sum = (amount1 + amount2)/100
 ```
 
 ## Resources:
-Documentation for inputting the euro sign using f -strings
 
-[Reference] https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/
+Inputting the euro sign using f -strings.
 
-Resources used for taking inputs from the terminal
+[GeeksforGeeks] (https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/)
 
-[Reference] https://www.geeksforgeeks.org/taking-input-from-console-in-python/
+Taking inputs from the terminal.
 
-Resources used to return a floating-point number from a number 
+[GeeksforGeeks] (https://www.geeksforgeeks.org/taking-input-from-console-in-python/)
 
-[Reference] https://www.geeksforgeeks.org/float-in-python/
+Return a floating-point number from a number.
+
+[GeeksforGeeks] (https://www.geeksforgeeks.org/float-in-python/)
 
 
 
@@ -171,18 +173,12 @@ I am using len() function == 10 to make sure that the input is exactly 10 charac
 
 To get the length of the account number, I used the len() function which will return the number of characters in the string.
 
-[Reference] https://www.w3schools.com/python/ref_func_len.asp
-
-
 ```
   account_length = len(account_number)
   
 ```
 
-
 To modify the program to handle different character lenghts, I used the if, else statement.
-
-[Reference] https://www.programiz.com/python-programming/if-elif-else
 
 When handling account numbers with more than 4 characters, I set the program to only show the last 4 characters. For example, if an account number with 6 characters is entered, the first 2 will be masked and the last 4 will be visable.
 
@@ -190,7 +186,7 @@ When handling account numbers with more than 4 characters, I set the program to 
 # Check if the account number has at least 4 characters.
 if account_length >= 4:
     if account_length > 4:
-        # Mask all but the last 4 digits
+        # Mask all but the last 4 digits.
      masked_account_number = 'X' * (account_length - 4) + account_number[-4:]
 ```
 
@@ -198,7 +194,7 @@ When handling account numbers with exactly 4 characters, I decided to show the w
 
 ```
 else:
-    # If the account number has exactly 4 digits, show the whole number
+    # If the account number has exactly 4 digits, show the whole number.
     masked_account_number = account_number
 ```
 
@@ -206,22 +202,22 @@ I took the same logic from above and applied it to if there are account numbers 
 
 ```
 else:
-    # If the account number has fewer than 4 digits, show the whole account number
+    # If the account number has fewer than 4 digits, show the whole account number.
     print("Account number is too short, showing the whole number:", account_number)
 ```
 
 
 ## Resources:
 
-[Reference] https://docs.python.org/3/library/string.html
+[Python] (https://docs.python.org/3/library/string.html)
 
-[Reference] https://docs.python.org/3/tutorial/introduction.html#strings
+[Python] (https://docs.python.org/3/tutorial/introduction.html#strings)
 
-[Reference] https://www.w3schools.com/python/python_strings.asp
+[w3schools] (https://www.w3schools.com/python/python_strings.asp)
 
-[Reference] https://www.w3schools.com/python/ref_func_len.asp
+[w3schools] (https://www.w3schools.com/python/ref_func_len.asp)
 
-[Reference] https://www.programiz.com/python-programming/if-elif-else
+[Programiz] (https://www.programiz.com/python-programming/if-elif-else)
 
 
 # Weekly Task 4 - collatz.py
@@ -242,14 +238,12 @@ Please enter a positive integer: 10
 10 5 16 8 4 2 1
 
 
-
-
 ## Code explained
 
 After defining my function and prompting user input, I need to ensure that the number the user inputs is a positive integer. I did this by applying an if statement.
 
 ```
-# Ensure the number is positive
+# Ensure the number is positive.
 if number <= 0:
     print("Please enter a positive integer.")
     return
@@ -258,14 +252,14 @@ if number <= 0:
 Python Lists Lists are used to store multiple items in a single variable. I used a list in the program to store the sequence of numbers.
 
 ```
-# Create a list to store the sequence
+# Create a list to store the sequence.
 sequence = []
 ```
 
 Next I added a while loop. With the while loop, the program can execute a set of statements as long as a condition is true.
 
 ```
-# Continue the process until the number becomes 1
+# Continue the process until the number becomes 1.
 while number != 1:
 
 ```
@@ -273,14 +267,14 @@ while number != 1:
 I used the append() method which adds a single element to the end of a list. It modifies the original list in place and does not return a new list.
 
 ```
-# Add the current number to the sequence
+# Add the current number to the sequence.
 sequence.append(number)
 ```
 
 I applied the Collatz rule to the program using if and else statements. These statements will check if the number is even or odd and then apply the corresponding rule (If even, divide by 2) or (If odd, multiply by 3 and add 1).
 
 ```
-        # Apply the Collatz rule
+        # Apply the Collatz rule.
         if number % 2 == 0:
             number = number // 2  # If even, divide by 2
         else:
@@ -288,17 +282,17 @@ I applied the Collatz rule to the program using if and else statements. These st
 ```
 
 
-While number !=1: stops when the number becomes 1, it actually doesn't add it in the sequence, it's the end of the Collatz chain. I need to include 1 manually and I do this by using the Append() Method
+While number !=1: stops when the number becomes 1, it actually doesn't add it in the sequence, it's the end of the Collatz chain. I need to include 1 manually and I do this by using the Append() Method.
 
 ```
-    # Add 1 to the sequence as the loop ends when number becomes 1
+    # Add 1 to the sequence as the loop ends when number becomes 1.
     sequence.append(1)
 ```
 
 I used the join() method  to convert a list of numbers into a string with spaces between them.
 
 ```
-    # Output the sequence as a space-separated string
+    # Output the sequence as a space-separated string.
     print(" ".join(map(str, sequence)))
 ```
 
@@ -306,27 +300,26 @@ I used the join() method  to convert a list of numbers into a string with spaces
 
 ## Resources:
 
-Information on the Collatz Problem
+Information on the Collatz Problem.
 
-[Reference] https://www.askpython.com/python/examples/collatz-conjecture
+[AskPython] (https://www.askpython.com/python/examples/collatz-conjecture)
 
-Python input() Function
+Python input() Function.
 
-[Reference] https://docs.python.org/3/library/functions.html#input
+[Python] (https://docs.python.org/3/library/functions.html#input)
 
-Python Lists
+Python Lists.
 
-[Reference] https://www.w3schools.com/python/python_lists.asp
+[W3schools] (https://www.w3schools.com/python/python_lists.asp)
 
-Python List append() Method
+Python List append() Method.
 
-[Reference] https://www.w3schools.com/python/ref_list_append.asp
+[W3schools] https://www.w3schools.com/python/ref_list_append.asp
 
 The While Loop.
+[W3schools] https://www.w3schools.com/python/python_while_loops.asp
 
-[Reference] https://www.w3schools.com/python/python_while_loops.asp
-
-[Reference] https://www.youtube.com/watch?time_continue=175&v=ECduJk00mUU&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=Mjg2NjY
+[You] https://www.youtube.com/watch?time_continue=175&v=ECduJk00mUU&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=Mjg2NjY
 
 Python Conditional Statements
 
