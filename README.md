@@ -3,13 +3,21 @@
 Author: Laura Donnelly
 
 
-This ReadMe file will give a description for the the assigned weekly tasks, show how to run the programs, state what technologies and libraries were used, present additional information and insights for the 2025 Programming and Scripting Module. 
+This ReadMe file for the 2025 Programming and Scripting Module for the H. Dip in Science in Data Analytics, ATU will do the following:
+
+- Give a description for each of the assigned weekly tasks.
+  
+- Show how to run the programs.
+  
+- State what technologies and libraries were used.
+  
+- Present additional information, comments and insights for code used in each of the tasks. 
 
 
 # Technologies
 This section covers what tools were used 
 
--Anaconda
+-Anaconda [(https://www.anaconda.com/download)]
 
 -Git
 
@@ -556,8 +564,13 @@ I import packages OS and SYS. Sys gives better control over input or output. Use
 
 
 ```
-# Import packages
+
+# Import packages.
+
+# Import sys to handle command-line arguments and exit the program.
 import sys
+
+#Import os to check if a given path is a valid file.
 import os
 
 ```
@@ -573,15 +586,21 @@ I start error handling for the program. I will use try, else statements. First, 
 I add in encoding='utf-8' to read the text file. When I tried to run the code without including it, I got the error 'the file mobydick.txt could not be read as a text file', so after researching this error type I realised the moby dick text file had some other language characters in it so I needed to include UTF-8 it in to read the characters in the file correctly.
 
 I use file.read() to read in the text file as a string and then return it to count the number of lowercase 'e's using str.count() (changed to text.count to match the variable name). I am making the assumption of only counting the lower case 'e's for this task.
+
 ```
-    try:
-        with open(filename, 'r', encoding='utf-8') as file:
-            text = file.read()
-            return text.count('e')
+   # Error handling using try and except statements.
+try:
+    # Open the file in read mode with UTF-8 encoding.
+    with open(filename, 'r', encoding='utf-8') as file:
+        # Read in the file.
+        text = file.read()
+        # Count the number of lowercase 'e's.
+        return text.count('e')
 ```
 
 Moving onto except cases for the error handling. I use except to catch files that don't exist. If the file inputed by the user doesnt exist, the message file not found will be printed on the terminal. I use sys.exit(1) which means there was an errorthat is why the program is exiting.
 ```
+# Error handling with except statement to catch when the file doesn't exist.    
 except FileNotFoundError:
     print(f"Error: The file '{filename}' was not found.")
     sys.exit(1)
@@ -589,18 +608,18 @@ except FileNotFoundError:
 I use except UnicodeDecodeError to catch any files inputted that aren't text files. For example, binary files, png files. To test this, I used the plottask.png file from Weekly Task 08 to make sure the error message prints. I use Exception next, stored as e to catch any other types of unexpected errors that could come through the program.
 
 ```
+# Error handling with except statement to catch when a file can't be read as UTF-8 (e.g. png file, binary file)    
 except UnicodeDecodeError:
     print(f"Error: The file '{filename}' could not be read as a text file.")
     sys.exit(1)
+# Error handling with except statement to catch any other unexpected errors and print an error for user.
 except Exception as e:
-    print(f"An unexpected error occurred: {e}")
-    sys.exit(1)
 ```
 Now after setting up the error handling, I look at the main function (which I have named, main). I use the len()- function  to count the number of arguments passed to the command line. Since the iteration starts with 0, it also counts the name of the program as one argument. This line checks the script es.py, with the index 0 and the arguement passed in, the file name, with the index 1. So I have the if statement to check for less than 2 to only check for the script name and the arguement passed in. It checks for if the user inputed a file name, and then prints out information for the user on how to run the program.
 
 ```
 def main():
-    # Check for filename argument
+    # Check for filename argument passed in the command line. 
     if len(sys.argv) < 2:
         print("Run on Command line: python es.py <filename>")
         sys.exit(1)
@@ -609,22 +628,24 @@ def main():
 I store the arguement as a variable called filename to call on later. I use the os.path.isfile() method to check if the file actually exists and is a file, that it is not a directory or invalid path. If it is not it will print out an error for the user. I call the function to count the number of 'e's in the file and then print out the results for the user. 
 
 ```
+# Store arguement as a variable to call on later.
 filename = sys.argv[1]
 
-# Check if the path is a file
+# Check if the given file path is a valid file.
 if not os.path.isfile(filename):
     print(f"Error: '{filename}' is not a valid file.")
     sys.exit(1)
 
 # Call the function to count 'e's.
 number_of_es = count_e(filename)
+# Print out the results.
 print(f"The file '{filename}' contains {number_of_es} lowercase 'e' characters.")
 ```
 
 I use the name gaurd to make sure that main() only runs when this file is being used, and not when it's imported into another Python script. 
 
 ```
-# Run the main function.
+# Run the main function using Name Gaurd. 
 if __name__ == "__main__":
     main()
 ```
