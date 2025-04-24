@@ -1,14 +1,7 @@
 # collatz.py
-
-# This program asks the user to input a positive int and outputs sucessive values following the collatz rule
-# Collatz rule:
-# If even number inputted, divide by 2
-# If odd, multiply by 3 and add 1
-# The program will end if the current value is one.
+# Weekly Task 04
 
 # Author: Laura Donnelly
-
-
 
 
 # This function allows the programme to take input from the user, which is used to ask the user for a positive integer

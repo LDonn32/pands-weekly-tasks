@@ -1,9 +1,7 @@
 # banks.py
 # Weekly Task 0264
 
-
 # Author: Laura Donnelly
-
 
 
 # prompt user for first amount of money in cents

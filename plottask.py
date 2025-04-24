@@ -48,10 +48,8 @@ plt.ylabel('h(x)')
 # Add a legend to the function plot.
 plt.legend(loc='upper left' )
 
-
 # Save the histogram and plot.
 plt.savefig('plottask.png')
-
 
 # Adjust layout to avoid any overlap of the histogram or plot.
 plt.tight_layout()
