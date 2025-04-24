@@ -18,13 +18,13 @@ This ReadMe file for the 2025 Programming and Scripting Module for the H. Dip in
 
 ## This section covers what tools were used: 
 
-[Anaconda] (https://www.anaconda.com/download)
+[Anaconda](https://www.anaconda.com/download)
 
-[Git] (https://git-scm.com/downloads)
+[Git](https://git-scm.com/downloads)
 
-[GitHub] (https://github.com/)
+[GitHub](https://github.com/)
 
-[VSCode] (https://code.visualstudio.com/)
+[VSCode](https://code.visualstudio.com/)
 
 
 # Requirements.txt
@@ -505,33 +505,33 @@ else:
 
 I used this resource as starting point for my code. 
 
-[Geeksforgeeks](https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/)
+[Geeksforgeeks] (https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/)
 
 Python Count() Method
 
-[Geeksforgeeks](https://www.geeksforgeeks.org/python-list-count-method/)
+[Geeksforgeeks] (https://www.geeksforgeeks.org/python-list-count-method/)
 
 Python While True
 
-[Geeksforgeeks](https://www.geeksforgeeks.org/how-to-use-while-true-in-python/)
+[Geeksforgeeks] (https://www.geeksforgeeks.org/how-to-use-while-true-in-python/)
 
 Using Count() with a while loop
 
-[Stackoverflow](https://stackoverflow.com/questions/20255372/record-how-many-times-a-while-loop-runs-python)
+[Stackoverflow] (https://stackoverflow.com/questions/20255372/record-how-many-times-a-while-loop-runs-python)
 
-[Bobbyhadz.com](https://bobbyhadz.com/blog/python-count-in-for-loop)
+[Bobbyhadz.com] (https://bobbyhadz.com/blog/python-count-in-for-loop)
 
 Using abs() Function
 
-[Geeksforgeeks](https://www.geeksforgeeks.org/abs-in-python/)
+[Geeksforgeeks] (https://www.geeksforgeeks.org/abs-in-python/)
 
 Using Float() Function
 
-[Geeksforgeeks](https://www.geeksforgeeks.org/float-in-python/)
+[Geeksforgeeks] (https://www.geeksforgeeks.org/float-in-python/)
 
 Using the if and else Statements
 
-[W3schools](https://www.w3schools.com/python/python_conditions.asp)
+[W3schools] (https://www.w3schools.com/python/python_conditions.asp)
 
 
 
@@ -647,78 +647,78 @@ if __name__ == "__main__":
 
 Information on SYS Module. 
 
-[Reference] https://www.geeksforgeeks.org/python-sys-module/
+[Geeksforgeeks] https://www.geeksforgeeks.org/python-sys-module/
 
-[Reference] https://stackoverflow.com/questions/70797/user-input-and-command-line-arguments
+[Stackoverflow] https://stackoverflow.com/questions/70797/user-input-and-command-line-arguments
 
 Information on OS Module.
 
-[Reference] https://www.geeksforgeeks.org/os-module-python-examples/
+[Geeksforgeeks] https://www.geeksforgeeks.org/os-module-python-examples/
 
 
 Information on OS Exceptions.
 
-[Reference] https://docs.python.org/3/library/exceptions.html#os-exceptions
+[Python] https://docs.python.org/3/library/exceptions.html#os-exceptions
 
 Error Handling ( Try, except, else and finally)
 
 [W3schools] (https://www.w3schools.com/python/python_try_except.asp)
 
-[Reference] https://realpython.com/python-exceptions/
+[Realpython] (https://realpython.com/python-exceptions/)
 
 Open() Function. 
 
-[Reference] https://docs.python.org/3/library/functions.html#open
+[Python] (https://docs.python.org/3/library/functions.html#open)
 
 Using With Open() Function.
 
-[Reference] https://www.statology.org/with-open-python/
+[Statology] (https://www.statology.org/with-open-python/)
 
 Unicode Documentation (encoding='utf-8'). 
 
-[Reference] https://docs.python.org/3/howto/unicode.html
+[Python] (https://docs.python.org/3/howto/unicode.html)
 
 Resource when to use UTF-8.
 
-[Reference] https://www.pythontutorial.net/python-basics/python-read-text-file/
+[Python] (https://www.pythontutorial.net/python-basics/python-read-text-file/)
 
 Read File() Method.
 
-[W3schools] https://www.w3schools.com/python/ref_file_read.asp
+[W3schools] (https://www.w3schools.com/python/ref_file_read.asp)
 
 String Count Method.
 
-[W3schools] https://www.w3schools.com/python/ref_string_count.asp
+[W3schools] (https://www.w3schools.com/python/ref_string_count.asp)
 
 SYS exit() Function.
 
-[Reference] https://stackoverflow.com/questions/9426045/difference-between-exit0-and-exit1-in-python
+[Stackoverflow] (https://stackoverflow.com/questions/9426045/difference-between-exit0-and-exit1-in-python)
 
 UnicodeDecodeError
 
-[Reference] https://docs.python.org/3/library/exceptions.html#UnicodeDecodeError
+[Python] (https://docs.python.org/3/library/exceptions.html#UnicodeDecodeError)
 
 Exception Handing.
 
-[Reference] https://www.geeksforgeeks.org/python-exception-handling/
+[Geeksforgeeks] (https://www.geeksforgeeks.org/python-exception-handling/)
 
 Using SYS argv. 
 
-[Reference] https://www.geeksforgeeks.org/how-to-use-sys-argv-in-python/
+[Geeksforgeeks] (https://www.geeksforgeeks.org/how-to-use-sys-argv-in-python/)
 
-[Reference] https://stackoverflow.com/questions/29045768/how-to-use-sys-argv-in-python-to-check-length-of-arguments-so-it-can-run-as-scri
+[Stackoverflow] (https://stackoverflow.com/questions/29045768/how-to-use-sys-argv-in-python-to-check-length-of-arguments-so-it-can-run-as-scri)
 
 Len() Function.
 
-[Reference]  https://realpython.com/len-python-function/
+[Realpython]  (https://realpython.com/len-python-function/)
 
 OS path.isfile Method.
 
-[Reference] https://www.geeksforgeeks.org/python-os-path-isfile-method/
+[Geeksforgeeks] (https://www.geeksforgeeks.org/python-os-path-isfile-method/)
 
 Name Guard.
 
-[Reference] https://stackoverflow.com/questions/419163/what-does-if-name-main-do
+[Stackoverflow] (https://stackoverflow.com/questions/419163/what-does-if-name-main-do)
 
 
 # Weekly Task 8 - plottask.py
@@ -830,49 +830,49 @@ plt.show()
 
 Information on Histograms, particularly useful for information on the Horizontal and Vertical axis.
 
-[Reference] https://www.geeksforgeeks.org/histogram/
+[Geeksforgeeks] (https://www.geeksforgeeks.org/histogram/)
 
 Datacamp Guide to Histograms. 
 
-[Reference] https://www.datacamp.com/blog/frequency-histograms?utm_source=chatgpt.com
+[Datacamp] (https://www.datacamp.com/blog/frequency-histograms?utm_source=chatgpt.com)
 
 Numpy Random Function.
 
-[Reference] https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html
+[Numpy] (https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html)
 
 Mathplotlib Subplot Documentation. 
 
-[Reference] https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot.html
+[Matplotlib] (https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot.html)
 
 Matplotlib Pyplot Histogram Documenation.
 
-[Reference] https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html
+[Matplotlib] (https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html)
 
 Add legend to Histogram.
 
-[Reference] https://www.geeksforgeeks.org/matplotlib-pyplot-legend-in-python/
+[Geeksforgeeks] (https://www.geeksforgeeks.org/matplotlib-pyplot-legend-in-python/)
 
 Numpy Arrange Function. 
 
-[Reference] https://numpy.org/doc/stable/reference/generated/numpy.arange.html
+[Numpy] (https://numpy.org/doc/stable/reference/generated/numpy.arange.html)
 
-[Reference] https://www.geeksforgeeks.org/numpy-arrange-in-python/
+[Geeksforgeeks] (https://www.geeksforgeeks.org/numpy-arrange-in-python/)
 
 Python Program to Find Cube of a Number (Using the exponentiation operator) .
 
-[Reference] https://www.geeksforgeeks.org/python-program-to-find-cube-of-a-number/
+[Reference] (https://www.geeksforgeeks.org/python-program-to-find-cube-of-a-number/)
 
 Matplotlib Pyplot Plot Documenation.
 
-[Reference] https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html
+[Reference] (https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html)
 
 Matplotlib Savefig Function.
 
-[Reference] https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html
+[Reference] (https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html)
 
 Tight Layout Funcion. 
 
-[Reference] https://www.geeksforgeeks.org/matplotlib-pyplot-tight_layout-in-python/
+[Reference] (https://www.geeksforgeeks.org/matplotlib-pyplot-tight_layout-in-python/)
 
 
 
@@ -888,15 +888,15 @@ Contact Email: G00472977@atu.ie
 
 Useful template for creating this ReadMe file.
 
-[Reference] https://github.com/othneildrew/Best-README-Template/blob/main/README.md
+[Github Best ReadMe Template](https://github.com/othneildrew/Best-README-Template/blob/main/README.md)
 
 Useful to help format and use correct syntax for the ReadMe File, particularly for quoting code.
 
-[Reference]  https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+[Githubdocs](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 Python CheatSheet (2025)
 
-[Reference] https://www.geeksforgeeks.org/python-cheat-sheet/
+[Python CheatSheet (2025)](https://www.geeksforgeeks.org/python-cheat-sheet/)
 
 
 
