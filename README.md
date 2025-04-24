@@ -59,10 +59,14 @@ python weekday.py
 python squareroot.py
 ```
 
-NOTE for running moby dick file
+```
+python es.py <filename.txt>
+```
+
+NOTE: To run the es.py program with the mobydick.txt file in the repository use the below.
 
 ```
-python es.py
+python es.py mobydick.txt
 ```
 
 ```
@@ -397,7 +401,7 @@ else: # 5 Sat, 6 Sun
 ```
 
 
-## Rescourses: 
+## Resources: 
 
 Documentation on how to import datetime and use Weekday() method
 
@@ -539,11 +543,169 @@ The program should take the filename from an argument on the command line. I hav
 Marks will be given for dealing with errors eg no argument, filename that does not exist, or is not a text file.
 
 
-
 $ python es.py moby-dick.txt
 116960
 
+
 ## Code explained 
+
+Assumptions before starting this program: I am only looking at lower case 'e' for this code. The file to read in will be a txt file. If user input doesnt give me a file name or an incorrect file type, program will print out an error message.
+
+
+I import packages OS and SYS. Sys gives better control over input or output. Users can engage with the terminal/ comand line more freely. OS allows me to check file paths, if they exist or not.
+
+
+```
+# Import packages
+import sys
+import os
+
+```
+I define the function as count_e and this will take in the file name.
+
+```
+# Define the function.
+def count_e(filename):
+```
+
+I start error handling for the program. I will use try, else statements. First, I use try which will follow the code set out in the with the open() function. This will open the file, 'r' opens it for reading (default). I include 'with' before open as it will ensure to automatically close the file after. I was getting the error 'ValueError: I/O operation on closed file' with first draft of the code, I believe I wasn't closing the file in the right way and after I used the 'With' function it didn't occur. 
+
+I add in encoding='utf-8' to read the text file. When I tried to run the code without including it, I got the error 'the file mobydick.txt could not be read as a text file', so after researching this error type I realised the moby dick text file had some other language characters in it so I needed to include UTF-8 it in to read the characters in the file correctly.
+
+I use file.read() to read in the text file as a string and then return it to count the number of lowercase 'e's using str.count() (changed to text.count to match the variable name). I am making the assumption of only counting the lower case 'e's for this task.
+```
+    try:
+        with open(filename, 'r', encoding='utf-8') as file:
+            text = file.read()
+            return text.count('e')
+```
+
+Moving onto except cases for the error handling. I use except to catch files that don't exist. If the file inputed by the user doesnt exist, the message file not found will be printed on the terminal. I use sys.exit(1) which means there was an errorthat is why the program is exiting.
+```
+except FileNotFoundError:
+    print(f"Error: The file '{filename}' was not found.")
+    sys.exit(1)
+```
+I use except UnicodeDecodeError to catch any files inputted that aren't text files. For example, binary files, png files. To test this, I used the plottask.png file from Weekly Task 08 to make sure the error message prints. I use Exception next, stored as e to catch any other types of unexpected errors that could come through the program.
+
+```
+except UnicodeDecodeError:
+    print(f"Error: The file '{filename}' could not be read as a text file.")
+    sys.exit(1)
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
+    sys.exit(1)
+```
+Now after setting up the error handling, I look at the main function (which I have named, main). I use the len()- function  to count the number of arguments passed to the command line. Since the iteration starts with 0, it also counts the name of the program as one argument. This line checks the script es.py, with the index 0 and the arguement passed in, the file name, with the index 1. So I have the if statement to check for less than 2 to only check for the script name and the arguement passed in. It checks for if the user inputed a file name, and then prints out information for the user on how to run the program.
+
+```
+def main():
+    # Check for filename argument
+    if len(sys.argv) < 2:
+        print("Run on Command line: python es.py <filename>")
+        sys.exit(1)
+```
+
+I store the arguement as a variable called filename to call on later. I use the os.path.isfile() method to check if the file actually exists and is a file, that it is not a directory or invalid path. If it is not it will print out an error for the user. I call the function to count the number of 'e's in the file and then print out the results for the user. 
+
+```
+filename = sys.argv[1]
+
+# Check if the path is a file
+if not os.path.isfile(filename):
+    print(f"Error: '{filename}' is not a valid file.")
+    sys.exit(1)
+
+# Call the function to count 'e's.
+number_of_es = count_e(filename)
+print(f"The file '{filename}' contains {number_of_es} lowercase 'e' characters.")
+```
+
+I use the name gaurd to make sure that main() only runs when this file is being used, and not when it's imported into another Python script. 
+
+```
+# Run the main function.
+if __name__ == "__main__":
+    main()
+```
+
+## Rescourses: 
+
+Information on SYS Module. 
+
+[Reference] https://www.geeksforgeeks.org/python-sys-module/
+
+[Reference] https://stackoverflow.com/questions/70797/user-input-and-command-line-arguments
+
+Information on OS Module.
+
+[Reference] https://www.geeksforgeeks.org/os-module-python-examples/
+
+
+Information on OS Exceptions.
+
+[Reference] https://docs.python.org/3/library/exceptions.html#os-exceptions
+
+Error Handling ( Try, except, else and finally)
+
+[Reference] https://www.w3schools.com/python/python_try_except.asp
+
+[Reference] https://realpython.com/python-exceptions/
+
+Open() Function. 
+
+[Reference] https://docs.python.org/3/library/functions.html#open
+
+Using With Open() Function.
+
+[Reference] https://www.statology.org/with-open-python/
+
+Unicode Documentation (encoding='utf-8'). 
+
+[Reference] https://docs.python.org/3/howto/unicode.html
+
+Resource when to use UTF-8.
+
+[Reference] https://www.pythontutorial.net/python-basics/python-read-text-file/
+
+Read File() Method.
+
+[Reference] https://www.w3schools.com/python/ref_file_read.asp
+
+String Count Method.
+
+[Reference] https://www.w3schools.com/python/ref_string_count.asp
+
+SYS exit() Function.
+
+[Reference] https://stackoverflow.com/questions/9426045/difference-between-exit0-and-exit1-in-python
+
+UnicodeDecodeError
+
+[Reference] https://docs.python.org/3/library/exceptions.html#UnicodeDecodeError
+
+Exception Handing.
+
+[Reference] https://www.geeksforgeeks.org/python-exception-handling/
+
+Using SYS argv. 
+
+[Reference] https://www.geeksforgeeks.org/how-to-use-sys-argv-in-python/
+
+[Reference] https://stackoverflow.com/questions/29045768/how-to-use-sys-argv-in-python-to-check-length-of-arguments-so-it-can-run-as-scri
+
+Len() Function.
+
+[Reference]  https://realpython.com/len-python-function/
+
+OS path.isfile Method.
+
+[Reference] https://www.geeksforgeeks.org/python-os-path-isfile-method/
+
+Name Guard.
+
+[Reference] https://stackoverflow.com/questions/419163/what-does-if-name-main-do
+
 
 # Weekly Task 8 - plottask.py
 Write a program called plottask.py that displays:
