@@ -116,7 +116,7 @@ Sum = (amount1 + amount2)/100
 
 ## Resources:
 
-Inputting the euro sign using f -strings.
+**Inputting the euro sign using f -strings.**
 
 [GeeksforGeeks] (https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/)
 
