@@ -120,11 +120,11 @@ Sum = (amount1 + amount2)/100
 
 [GeeksforGeeks] (https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/)
 
-Taking inputs from the terminal.
+**Taking inputs from the terminal.**
 
 [GeeksforGeeks] (https://www.geeksforgeeks.org/taking-input-from-console-in-python/)
 
-Return a floating-point number from a number.
+**Return a floating-point number from a number.**
 
 [GeeksforGeeks] (https://www.geeksforgeeks.org/float-in-python/)
 
@@ -209,13 +209,19 @@ else:
 
 ## Resources:
 
+**Information on strings.**
+
 [Python] (https://docs.python.org/3/library/string.html)
 
 [Python] (https://docs.python.org/3/tutorial/introduction.html#strings)
 
 [w3schools] (https://www.w3schools.com/python/python_strings.asp)
 
+**Len() Function.**
+
 [w3schools] (https://www.w3schools.com/python/ref_func_len.asp)
+
+**If, elif and else statements.**
 
 [Programiz] (https://www.programiz.com/python-programming/if-elif-else)
 
@@ -300,54 +306,53 @@ I used the join() method  to convert a list of numbers into a string with spaces
 
 ## Resources:
 
-Information on the Collatz Problem.
+**Information on the Collatz Problem.**
 
 [AskPython] (https://www.askpython.com/python/examples/collatz-conjecture)
 
-Python input() Function.
+**Python input() Function.**
 
 [Python] (https://docs.python.org/3/library/functions.html#input)
 
-Python Lists.
+**Python Lists.**
 
 [W3schools] (https://www.w3schools.com/python/python_lists.asp)
 
-Python List append() Method.
+**Python List append() Method.**
 
 [W3schools] (https://www.w3schools.com/python/ref_list_append.asp)
 
-The While Loop.
+**The While Loop.**
 
 [W3schools] (https://www.w3schools.com/python/python_while_loops.asp)
 
 [Youtube] (https://www.youtube.com/watch?time_continue=175&v=ECduJk00mUU&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=Mjg2NjY)
 
-Python Conditional Statements.
+**Python Conditional Statements.**
 
 [W3schools] (https://www.w3schools.com/python/python_conditions.asp)
 
-Python Append() Method.
+**Python Append() Method.**
 
 [W3schools] (https://www.w3schools.com/python/ref_list_append.asp)
 
-Python String Methods and join().
+**Python String Methods and join().**
 
 [Python] (https://docs.python.org/3/library/stdtypes.html#str.join)
 
 [W3schools] (https://www.w3schools.com/python/ref_string_join.asp)
 
-Looked at examples others did.
+**Looked at examples others did.**
 
 [Code Review] (https://codereview.stackexchange.com/questions/285429/automate-the-boring-stuff-with-python-the-collatz-sequence)
 
-
-Errors on code -  IndentationError: expected an indented block after function definition
+**Errors on code** - *IndentationError: expected an indented block after function definition.*
 
 Below resources helped to fix, I wasn't spacing/tabing code correctly first time.
 
-[Youtub] (https://www.youtube.com/watch?v=w5styN3Vaqw)
+[Youtube] (https://www.youtube.com/watch?v=w5styN3Vaqw)
 
-[Stackoverflow] https://stackoverflow.com/questions/4446366/why-am-i-getting-indentationerror-expected-an-indented-block
+[Stackoverflow] (https://stackoverflow.com/questions/4446366/why-am-i-getting-indentationerror-expected-an-indented-block)
 
 
 # Weekly Task 05 - weekday.py
@@ -405,13 +410,13 @@ else: # 5 Sat, 6 Sun
 
 ## Resources: 
 
-Documentation on how to import datetime and use Weekday() method
+**Documentation on how to import datetime and use Weekday() method.**
 
 [Stackoverflow] (https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python)
 
 [Geeksforgeeks] (https://www.geeksforgeeks.org/python-datetime-weekday-method-with-example/)
 
-Documentation on elif, if and else methods used in the code 
+**Documentation on elif, if and else methods used in the code.**
 
 [W3schools] (https://www.w3schools.com/python/python_conditions.asp)
 
@@ -504,33 +509,33 @@ else:
 
 ## Rescourses: 
 
-I used this resource as starting point for my code. 
+**I used this resource as starting point for my code.**
 
 [Geeksforgeeks] (https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/)
 
-Python Count() Method
+**Python Count() Method.**
 
 [Geeksforgeeks] (https://www.geeksforgeeks.org/python-list-count-method/)
 
-Python While True
+**Python While True.**
 
 [Geeksforgeeks] (https://www.geeksforgeeks.org/how-to-use-while-true-in-python/)
 
-Using Count() with a while loop
+**Using Count() with a while loop.**
 
 [Stackoverflow] (https://stackoverflow.com/questions/20255372/record-how-many-times-a-while-loop-runs-python)
 
 [Bobbyhadz.com] (https://bobbyhadz.com/blog/python-count-in-for-loop)
 
-Using abs() Function
+**Using abs() Function.**
 
 [Geeksforgeeks] (https://www.geeksforgeeks.org/abs-in-python/)
 
-Using Float() Function
+**Using Float() Function.**
 
 [Geeksforgeeks] (https://www.geeksforgeeks.org/float-in-python/)
 
-Using the if and else Statements
+**Using the if and else Statements.**
 
 [W3schools] (https://www.w3schools.com/python/python_conditions.asp)
 
@@ -646,20 +651,19 @@ if __name__ == "__main__":
 
 ## Rescourses: 
 
-Information on SYS Module. 
+**Information on SYS Module.**
 
-[Geeksforgeeks] https://www.geeksforgeeks.org/python-sys-module/
+[Geeksforgeeks] (https://www.geeksforgeeks.org/python-sys-module/)
 
-[Stackoverflow] https://stackoverflow.com/questions/70797/user-input-and-command-line-arguments
+[Stackoverflow] (https://stackoverflow.com/questions/70797/user-input-and-command-line-arguments)
 
-Information on OS Module.
+**Information on OS Module.**
 
-[Geeksforgeeks] https://www.geeksforgeeks.org/os-module-python-examples/
+[Geeksforgeeks] (https://www.geeksforgeeks.org/os-module-python-examples/)
 
+**Information on OS Exceptions.**
 
-Information on OS Exceptions.
-
-[Python] https://docs.python.org/3/library/exceptions.html#os-exceptions
+[Python] (https://docs.python.org/3/library/exceptions.html#os-exceptions)
 
 Error Handling ( Try, except, else and finally)
 
@@ -667,57 +671,57 @@ Error Handling ( Try, except, else and finally)
 
 [Realpython] (https://realpython.com/python-exceptions/)
 
-Open() Function. 
+**Open() Function.**
 
 [Python] (https://docs.python.org/3/library/functions.html#open)
 
-Using With Open() Function.
+**Using With Open() Function.**
 
 [Statology] (https://www.statology.org/with-open-python/)
 
-Unicode Documentation (encoding='utf-8'). 
+**Unicode Documentation (encoding='utf-8').**
 
 [Python] (https://docs.python.org/3/howto/unicode.html)
 
-Resource when to use UTF-8.
+**Resource when to use UTF-8.**
 
 [Python] (https://www.pythontutorial.net/python-basics/python-read-text-file/)
 
-Read File() Method.
+**Read File() Method.**
 
 [W3schools] (https://www.w3schools.com/python/ref_file_read.asp)
 
-String Count Method.
+**String Count Method.**
 
 [W3schools] (https://www.w3schools.com/python/ref_string_count.asp)
 
-SYS exit() Function.
+**SYS exit() Function.**
 
 [Stackoverflow] (https://stackoverflow.com/questions/9426045/difference-between-exit0-and-exit1-in-python)
 
-UnicodeDecodeError
+**UnicodeDecodeError**
 
 [Python] (https://docs.python.org/3/library/exceptions.html#UnicodeDecodeError)
 
-Exception Handing.
+**Exception Handing.**
 
 [Geeksforgeeks] (https://www.geeksforgeeks.org/python-exception-handling/)
 
-Using SYS argv. 
+**Using SYS argv.**
 
 [Geeksforgeeks] (https://www.geeksforgeeks.org/how-to-use-sys-argv-in-python/)
 
 [Stackoverflow] (https://stackoverflow.com/questions/29045768/how-to-use-sys-argv-in-python-to-check-length-of-arguments-so-it-can-run-as-scri)
 
-Len() Function.
+**Len() Function.**
 
 [Realpython]  (https://realpython.com/len-python-function/)
 
-OS path.isfile Method.
+**OS path.isfile Method.**
 
 [Geeksforgeeks] (https://www.geeksforgeeks.org/python-os-path-isfile-method/)
 
-Name Guard.
+**Name Guard.**
 
 [Stackoverflow] (https://stackoverflow.com/questions/419163/what-does-if-name-main-do)
 
@@ -829,52 +833,51 @@ plt.show()
 
 ## Rescourses: 
 
-Information on Histograms, particularly useful for information on the Horizontal and Vertical axis.
+**Information on Histograms, particularly useful for information on the Horizontal and Vertical axis.**
 
 [Geeksforgeeks] (https://www.geeksforgeeks.org/histogram/)
 
-Datacamp Guide to Histograms. 
+**Datacamp Guide to Histograms.**
 
 [Datacamp] (https://www.datacamp.com/blog/frequency-histograms?utm_source=chatgpt.com)
 
-Numpy Random Function.
+**Numpy Random Function.**
 
 [Numpy] (https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html)
 
-Mathplotlib Subplot Documentation. 
+**Mathplotlib Subplot Documentation.**
 
 [Matplotlib] (https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot.html)
 
-Matplotlib Pyplot Histogram Documenation.
+**Matplotlib Pyplot Histogram Documenation.**
 
 [Matplotlib] (https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html)
 
-Add legend to Histogram.
+**Add legend to Histogram.**
 
 [Geeksforgeeks] (https://www.geeksforgeeks.org/matplotlib-pyplot-legend-in-python/)
 
-Numpy Arrange Function. 
+**Numpy Arrange Function.**
 
 [Numpy] (https://numpy.org/doc/stable/reference/generated/numpy.arange.html)
 
 [Geeksforgeeks] (https://www.geeksforgeeks.org/numpy-arrange-in-python/)
 
-Python Program to Find Cube of a Number (Using the exponentiation operator) .
+**Python Program to Find Cube of a Number (Using the exponentiation operator).**
 
 [Reference] (https://www.geeksforgeeks.org/python-program-to-find-cube-of-a-number/)
 
-Matplotlib Pyplot Plot Documenation.
+**Matplotlib Pyplot Plot Documenation.**
 
-[Reference] (https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html)
+**[Reference] (https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html)**
 
 Matplotlib Savefig Function.
 
-[Reference] (https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html)
+**[Reference] (https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html)**
 
-Tight Layout Funcion. 
+**Tight Layout Funcion.**
 
 [Reference] (https://www.geeksforgeeks.org/matplotlib-pyplot-tight_layout-in-python/)
-
 
 
 
