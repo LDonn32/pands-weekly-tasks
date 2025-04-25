@@ -14,6 +14,8 @@ def mask_account_number():
     
 
     # Check if the input length is 10 characters.
+    # See: https://www.w3schools.com/python/ref_func_len.asp
+    
     if len(account_number) == 10:
         # Replace first 6 characters with X to mask the digits and keep the last 4 digits
         masked_account_number = 'XXXXXX' + account_number[-4:]
@@ -37,9 +39,13 @@ def mask_account_number():
     account_number = input("Please enter your account number: ")
 
     # Get the length of the account number.
+    # See: https://www.w3schools.com/python/ref_func_len.asp
+
     account_length = len(account_number)
 
-    # Check if the account number has at least 4 characters.
+    # Using if, else statements, check if the account number has at least 4 characters.
+    # See: https://www.programiz.com/python-programming/if-elif-else
+
     if account_length >= 4:
         if account_length > 4:
             # Mask all but the last 4 digits.

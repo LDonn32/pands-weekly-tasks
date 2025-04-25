@@ -4,7 +4,7 @@
 # Author: Laura Donnelly
 
 
-# Prompt user for first amount of money in cents.
+# Prompt the user for first amount of money in cents.
 # See: https://www.geeksforgeeks.org/taking-input-from-console-in-python/
 
 # Convert the inputted string to a float number.
@@ -17,7 +17,7 @@ amount1 =float(input("Enter amount of money in cent:"))
 amount2 = float(input("Enter a second amount of money in cents:"))
 
 # Add the two amounts and divide by 100 for decimal.
-# This is to convert our cents into euros if the input goes over 99 cents.
+# This is to convert the cents into euros if the input goes over 99 cents.
 
 Sum = (amount1 + amount2)/100
 
