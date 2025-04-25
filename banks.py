@@ -1,5 +1,5 @@
 # banks.py
-# Weekly Task 0264
+# Weekly Task 02
 
 # Author: Laura Donnelly
 
