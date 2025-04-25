@@ -54,7 +54,7 @@ def mask_account_number():
         # If the account number has fewer than 4 digits, show the whole account number.
         print("Account number is too short, showing the whole number:", account_number)
 
-# Run code.
+# Run the code.
 mask_account_number()
 
 
