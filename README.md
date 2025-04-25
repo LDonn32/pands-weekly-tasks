@@ -94,9 +94,10 @@ The program should:
 
 ## Code explained
 
-The input function will asks the user in the terminal to input the money.
+The input function will asks the user in the terminal to input the money. I used the resource  [GeeksforGeeks.org](https://www.geeksforgeeks.org/taking-input-from-console-in-python/) for taking inputs from the terminal. 
+
 I am asking them to do so in cents, so I need to convert the money into cents in the code. 
-I can do so using the float function
+I can do so using the float function. I looked at [GeeksforGeeks.org](https://www.geeksforgeeks.org/float-in-python/) for information on returning a floating-point number from a number.
 
 ```
 prompt user for first amount of money in cents
@@ -107,7 +108,8 @@ amount2 = float(input("Enter a second amount of money in cents:"))
 ```
 
 This calculation is then stored as a variable in Sum.
-When this is printed later it should show as decimal to properly count the cents if the input is large enough to convert into euros.
+When this is printed later it should show as decimal to properly count the cents if the input is large enough to convert into euros. 
+I used the resource [Geeksforgeeks.org](https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/) for inputting the euro sign using f -strings.
 
 ```
 # Add the two amounts and div
@@ -118,15 +120,15 @@ Sum = (amount1 + amount2)/100
 
 **Inputting the euro sign using f -strings.**
 
-[GeeksforGeeks] (https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/)
+[GeeksforGeeks](https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/)
 
 **Taking inputs from the terminal.**
 
-[GeeksforGeeks] (https://www.geeksforgeeks.org/taking-input-from-console-in-python/)
+[GeeksforGeeks.org](https://www.geeksforgeeks.org/taking-input-from-console-in-python/)
 
 **Return a floating-point number from a number.**
 
-[GeeksforGeeks] (https://www.geeksforgeeks.org/float-in-python/)
+[GeeksforGeeks.org](https://www.geeksforgeeks.org/float-in-python/)
 
 
 
