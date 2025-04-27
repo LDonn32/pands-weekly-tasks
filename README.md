@@ -465,7 +465,7 @@ else:
 
 **How to get square root in python** 
 
-[stackoverflow.com]((https://stackoverflow.com/questions/70793490/how-do-i-calculate-square-root-in-python))
+[stackoverflow.com](https://stackoverflow.com/questions/70793490/how-do-i-calculate-square-root-in-python)
 
 
 
