@@ -29,9 +29,17 @@ This ReadMe file for the 2025 Programming and Scripting Module for the H. Dip in
 [VSCode](https://code.visualstudio.com/)
 
 
-# Requirements.txt
-This file contains all the packages and libraries that were imported for the tasks.
+# Libraries/Modules used 
 
+[Datetime] https://docs.python.org/3/library/datetime.html
+
+[Matplotlib](https://matplotlib.org/stable/)
+
+[Numpy](https://numpy.org/doc/stable/index.html)
+
+[OS](https://docs.python.org/3/library/os.html)
+
+[SYS](https://docs.python.org/3/library/sys.html)
 
 # Installation/ how to run
 
@@ -41,11 +49,6 @@ Clone the repository:
 git clone https://github.com/LDonn32/pands-weekly-tasks.git
 ```
 
-Install requirements:
-
-```
-pip install -r requirements.txt
-```
 
 Run the desired program from the weekly tasks:
 
