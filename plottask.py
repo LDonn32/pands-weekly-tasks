@@ -8,16 +8,17 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Create a normal distribution.
+# Create a normal distribution with the values, mean and standard deviation given in task outline.
 mean = 5
 std_dev = 2
 num_samples = 1000
 
-# Generate the random data.
+# Generate some random data using the normal distribution.
 data = np.random.normal(mean, std_dev, num_samples)
 
 # Plot the histogram.
 # 1 row, 2 columns, first subplot.
+
 plt.subplot(1, 2, 1)  
 
 plt.hist(data, bins=30, color='pink', edgecolor='purple', label='Normal Distribution')
@@ -55,6 +56,7 @@ plt.savefig('plottask.png')
 plt.tight_layout()
 
 # Display the plots.
+# This will open a window showing the plots.
 plt.show()
 
 
