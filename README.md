@@ -144,7 +144,7 @@ def mask_account_number():
     # Prompt the user for their 10 character account number.
     account_number = input("Please enter your 10-character account number: ") 
 ```
-I am using len() function == 10 to make sure that the input is exactly 10 characters. I used this resource [len() Function] on w3schools.(https://www.w3schools.com/python/ref_func_len.asp). I make the I am using the [-4:] slice which will take from the 4th character from the end to the end.
+I am using len() function == 10 to make sure that the input is exactly 10 characters. I used this resource [len() Function] on w3schools.(https://www.w3schools.com/python/ref_func_len.asp). I am using the [-4:] slice which will take from the 4th character from the end to the end. I refer to information on [Datacamp.com](https://www.datacamp.com/tutorial/python-slice) on how to do this. 
 ```
 # Check if the input length is actually 10 characters.
 if len(account_number) == 10:
