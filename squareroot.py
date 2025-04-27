@@ -41,7 +41,7 @@ if n <= 0:
 # Set the tolerance to how close it gets to the square number, set at 5 decimals for accuracy.
 else:
     l = 0.00001  
-    
+
 # Print the results.
     print(f"Approximate square root of {n} is {sqrt(n, l)}")
 
