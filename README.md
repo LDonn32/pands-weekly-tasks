@@ -11,7 +11,9 @@ This ReadMe file for the 2025 Programming and Scripting Module for the H. Dip in
   
 * State what technologies and libraries were used.
   
-* Present additional information, comments and insights for code used in each of the tasks. 
+* Present additional information, comments and insights for code used in each of the tasks.
+
+* Includes references and additional resources used.
 
 
 # Technologies
@@ -29,7 +31,6 @@ This ReadMe file for the 2025 Programming and Scripting Module for the H. Dip in
 
 # Requirements.txt
 This file contains all the packages and libraries that were imported for the tasks.
-
 
 
 # Installation/ how to run
@@ -119,21 +120,6 @@ Sum = (amount1 + amount2)/100
 print(f"The sum of these is €{Sum}")
 ```
 
-## Resources:
-
-**Inputting the euro sign using f -strings.**
-
-[GeeksforGeeks.org](https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/)
-
-**Taking inputs from the terminal.**
-
-[GeeksforGeeks.org](https://www.geeksforgeeks.org/taking-input-from-console-in-python/)
-
-**Return a floating-point number from a number.**
-
-[GeeksforGeeks.org](https://www.geeksforgeeks.org/float-in-python/)
-
-
 
 # Weekly Task 03 - accounts.py
 
@@ -216,25 +202,6 @@ else:
 ```
 
 
-## Resources:
-
-**Information on strings.**
-
-[Python.org](https://docs.python.org/3/library/string.html)
-
-[Python.org](https://docs.python.org/3/tutorial/introduction.html#strings)
-
-[w3schools.com](https://www.w3schools.com/python/python_strings.asp)
-
-**Len() Function.**
-
-[w3schools.com](https://www.w3schools.com/python/ref_func_len.asp)
-
-**If, elif and else statements.**
-
-[Programiz.com](https://www.programiz.com/python-programming/if-elif-else)
-
-
 # Weekly Task 4 - collatz.py
 Write a program, called collatz.py, that asks the user to input any positive integer and outputs the successive values of the following calculation.
 
@@ -286,7 +253,7 @@ sequence = []
 ```
 
 Next I added a while loop. With the while loop, the program can execute a set of statements as long as a condition is true. 
-[W3schools While Loop](https://www.w3schools.com/python/python_while_loops.asp) is a great resource for understanding how to use a while loop. I also found this video helpful [Youtube.com](https://www.youtube.com/watch?time_continue=175&v=ECduJk00mUU&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=Mjg2NjY). For information on conditional statements, i refer to [W3schools Python Conditions](https://www.w3schools.com/python/python_conditions.asp)
+[W3schools While Loop](https://www.w3schools.com/python/python_while_loops.asp) is a great resource for understanding how to use a while loop. I also found this video helpful [Youtube.com](https://www.youtube.com/watch?time_continue=175&v=ECduJk00mUU&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=Mjg2NjY). For information on conditional statements, i refer to [W3schools Python Conditions](https://www.w3schools.com/python/python_conditions.asp).
 
 ```
 # Continue the process until the number becomes 1.
@@ -327,46 +294,11 @@ I used the join() method [Python.org join()](https://docs.python.org/3/library/s
 ```
 
 
-
 ## Additional Resources:
 
 **Information on the Collatz Problem.**
 
 [AskPython.com](https://www.askpython.com/python/examples/collatz-conjecture)
-
-**Python input() Function.**
-
-[Python.org](https://docs.python.org/3/library/functions.html#input)
-
-**Python Lists.**
-
-[W3schools.com](https://www.w3schools.com/python/python_lists.asp)
-
-**Python List append() Method.**
-
-[W3schools.com](https://www.w3schools.com/python/ref_list_append.asp)
-
-**The While Loop.**
-
-[W3schools.com](https://www.w3schools.com/python/python_while_loops.asp)
-
-[Youtube.com](https://www.youtube.com/watch?time_continue=175&v=ECduJk00mUU&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=Mjg2NjY)
-
-**Python Conditional Statements.**
-
-[W3schools.com](https://www.w3schools.com/python/python_conditions.asp)
-
-**Python Append() Method.**
-
-[W3schools.com](https://www.w3schools.com/python/ref_list_append.asp)
-
-**Python String Methods and join().**
-
-[Python.com](https://docs.python.org/3/library/stdtypes.html#str.join)
-
-[W3schools](https://www.w3schools.com/python/ref_string_join.asp)
-
-
 
 **Looked at examples others did.**
 
@@ -436,19 +368,6 @@ elif weeknumber < 5:
 else: 
     print("It is the weekend, yay!")
 ```
-
-
-## Resources: 
-
-**Documentation on how to import datetime and use Weekday() method.**
-
-[Stackoverflow.com](https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python)
-
-[Geeksforgeeks.org](https://www.geeksforgeeks.org/python-datetime-weekday-method-with-example/)
-
-**Documentation on elif, if and else methods used in the code.**
-
-[W3schools.com](https://www.w3schools.com/python/python_conditions.asp)
 
 
 
@@ -542,29 +461,11 @@ else:
    print(f"Approximate square root of {n} is {sqrt(n, l)}")
 ```
 
-## Rescourses: 
+## Additional Rescourses: 
 
-**I used this resource as starting point for my code.**
+**How to get square root in python** 
 
-[Geeksforgeeks.org](https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/)
-
-**Python While True.**
-
-[Geeksforgeeks.org](https://www.geeksforgeeks.org/how-to-use-while-true-in-python/)
-
-
-**Using abs() Function.**
-
-[Geeksforgeeks.org](https://www.geeksforgeeks.org/abs-in-python/)
-
-**Using Float() Function.**
-
-[Geeksforgeeks.org](https://www.geeksforgeeks.org/float-in-python/)
-
-**Using the if and else Statements.**
-
-[W3schools.com](https://www.w3schools.com/python/python_conditions.asp)
-
+[stackoverflow.com]((https://stackoverflow.com/questions/70793490/how-do-i-calculate-square-root-in-python))
 
 
 
@@ -585,7 +486,7 @@ $ python es.py moby-dick.txt
 I make some assumptions before starting this program: I am only looking at lower case 'e' for this code. The file to read in will be a txt file. If user input doesnt give me a file name or an incorrect file type, I need the program to print out an error message.
 
 
-I import packages OS and SYS. Sys gives better control over input or output. Users can engage with the terminal/ comand line more freely. I found information on SYS at[Geeksforgeeks.org](https://www.geeksforgeeks.org/python-sys-module/) and [Stackoverflow.com](https://stackoverflow.com/questions/70797/user-input-and-command-line-arguments). OS allows me to check file paths, if they exist or not. I found information on OS at [Geeksforgeeks.org](https://www.geeksforgeeks.org/os-module-python-examples/).
+I import packages OS and SYS. Sys gives better control over input or output. Users can engage with the terminal/ comand line more freely. I found information on SYS at[Geeksforgeeks.org](https://www.geeksforgeeks.org/python-sys-module/). OS allows me to check file paths, if they exist or not. I found information on OS at [Geeksforgeeks.org](https://www.geeksforgeeks.org/os-module-python-examples/).
 ```
 
 # Import packages.
@@ -700,81 +601,27 @@ if __name__ == "__main__":
     main()
 ```
 
-## Rescourses: 
+## Additional Rescourses: 
 
-**Information on SYS Module.**
-
-[Geeksforgeeks.org](https://www.geeksforgeeks.org/python-sys-module/)
+**Additional Information on SYS Module.**
 
 [Stackoverflow.com](https://stackoverflow.com/questions/70797/user-input-and-command-line-arguments)
 
-**Information on OS Module.**
+**Additional Information on OS Module.**
 
-[Geeksforgeeks.org](https://www.geeksforgeeks.org/os-module-python-examples/)
+[w3schools.com](https://www.w3schools.com/python/module_os.asp))
 
-**Information on OS Exceptions.**
+**Additional Information on OS Exceptions.**
 
 [Python.org](https://docs.python.org/3/library/exceptions.html#os-exceptions)
-
-Error Handling (Try, except, else and finally)
-
-[W3schools.com](https://www.w3schools.com/python/python_try_except.asp)
-
-[Realpython.com](https://realpython.com/python-exceptions/)
-
-**Open() Function.**
-
-[Python.org](https://docs.python.org/3/library/functions.html#open)
-
-**Using With Open() Function.**
-
-[Statology.org](https://www.statology.org/with-open-python/)
 
 **Unicode Documentation (encoding='utf-8').**
 
 [Python.org](https://docs.python.org/3/howto/unicode.html)
 
-**Resource when to use UTF-8.**
+**Additional Information on Name Guard.**
 
-[Pythontutorial.net](https://www.pythontutorial.net/python-basics/python-read-text-file/)
-
-**Read File() Method.**
-
-[W3schools.com](https://www.w3schools.com/python/ref_file_read.asp)
-
-**String Count Method.**
-
-[W3schools.com](https://www.w3schools.com/python/ref_string_count.asp)
-
-**SYS exit() Function.**
-
-[Stackoverflow.com](https://stackoverflow.com/questions/9426045/difference-between-exit0-and-exit1-in-python)
-
-**UnicodeDecodeError**
-
-[Python.org](https://docs.python.org/3/library/exceptions.html#UnicodeDecodeError)
-
-**Exception Handing.**
-
-[Geeksforgeeks.org](https://www.geeksforgeeks.org/python-exception-handling/)
-
-**Using SYS argv.**
-
-[Geeksforgeeks.org](https://www.geeksforgeeks.org/how-to-use-sys-argv-in-python/)
-
-[Stackoverflow.com](https://stackoverflow.com/questions/29045768/how-to-use-sys-argv-in-python-to-check-length-of-arguments-so-it-can-run-as-scri)
-
-**Len() Function.**
-
-[Realpython.com](https://realpython.com/len-python-function/)
-
-**OS path.isfile Method.**
-
-[Geeksforgeeks.org](https://www.geeksforgeeks.org/python-os-path-isfile-method/)
-
-**Name Guard.**
-
-[Stackoverflow.com](https://stackoverflow.com/questions/419163/what-does-if-name-main-do)
+[Betterstack.com](https://betterstack.com/community/questions/what-does-if-name-is-main-do-in-python/)
 
 
 # Weekly Task 8 - plottask.py
@@ -801,7 +648,7 @@ import matplotlib.pyplot as plt
 I create the normal distribution next with the information given in the task: 1000 values, mean=5, std=2.
 
 ```
-# Create a normal distribution. 
+# Create a normal distribution with the values, mean and standard deviation given in task outline.
 mean = 5
 std_dev = 2
 num_samples = 1000
@@ -811,11 +658,11 @@ num_samples = 1000
 I use the random.normal function in numpy to generate random data for my histogram.
 
 ```
-# Generate the random data.
+# Generate some random data using the normal distribution.
 data = np.random.normal(mean, std_dev, num_samples)
 ```
 
-I am using plt.subplot() to show the histogram and function plot side by side. I follow the guidance from the Matplot lib Histogram documentation to plot out my histogram. Using plt.hist() I divide the data in 30 bins to make the histogram tidy, I set the label as Normal Distribution which will reflect on the legend later.  I set the title of the histogram with plt.title(), as well as the names of the x and y axis using plt.xlabel() and plt.ylable() respectively. 
+I am using plt.subplot() to show the histogram and function plot side by side. I follow [Matplotlib Subplot](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot.html) documentation. I also follow the guidance from the [Matplot lib Histogram](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html) documentation to plot out my histogram. Using plt.hist() I divide the data in 30 bins to make the histogram tidy, I set the label as Normal Distribution which will reflect on the legend later.  I set the title of the histogram with plt.title(), as well as the names of the x and y axis using plt.xlabel() and plt.ylable() respectively. See [Matplot lib Pyplot.title](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.title.html), [Matplot lib Pyplot.xlabel](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xlabel.html) and [Matplot lib Pyplot.ylabel](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.ylabel.html) for details on this.
 
 Working with histograms I need to make sure my axis are correctly set up. I set the xlabel as 'Value'. This sets the x axis to show the values or bins.  I set the y label as 'Frequency'. This sets the y axis to shows the frequency of how often the data shows up in the range. 
 
@@ -830,14 +677,14 @@ plt.xlabel('Value')
 plt.ylabel('Frequency')
 ```
 
-I add the legend to the Histogram. I use loc='upper left' to try not be in the way of the graphs data.
+I add the legend to the Histogram. I use loc='upper left' to try not be in the way of the graphs data. I refer to [Geeksforgeeks.org](https://www.geeksforgeeks.org/matplotlib-pyplot-legend-in-python/) on guidance about adding a legend to the histogram.
 
 ```
 # Add a legend to the histogram.
 plt.legend(loc='upper left')
 ```
 
-I plot the function using the np.arange() function, then I have to create the x values for the rang of 0 - 10 as instructed in the task. I add a step of 0.1. I selected a smaller step size as it gives me a smoother visual for the graph. I tested with a step of 1 and it was hard to read.
+I plot the function using the np.arange() function, see [Numpy.org np.arange()](https://numpy.org/doc/stable/reference/generated/numpy.arange.html) for guidance, then I have to create the x values for the rang of 0 - 10 as instructed in the task. I add a step of 0.1. I selected a smaller step size as it gives me a smoother visual for the graph. I tested with a step of 1 and it was hard to read. I also refer to [Geeksforgeeks.org](https://www.geeksforgeeks.org/numpy-arrange-in-python/) for guidance on the np.arange function.
 
 ```
 # Plot the function h(x) = x^3 using np.arange().
@@ -845,13 +692,14 @@ I plot the function using the np.arange() function, then I have to create the x 
 x_values = np.arange(0, 10, 0.1)  
 ```
 
-I calculate the function h(x)=x3. I need to take x, and raise it to the power of 3. I do this by using the exponentiation operator **. 
+I calculate the function h(x)=x3. I need to take x, and raise it to the power of 3. I do this by using the exponentiation operator **. I looked this up at 
+[Geeksforgeeks.org](https://www.geeksforgeeks.org/python-program-to-find-cube-of-a-number/).
 ```
 # Calculate y = x^3.
 y_value = x_values**3  
 ```
 
-I follow the guidance from the Matplotlib Plot documentation to plot out my function plot. Same as when I was plotting my histogram, I  add my x and y values, I set the colour, label the function and the title. I add a legend the same way as I did for the histogram.
+I follow the guidance from the [Matplotlib Plot](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html) documentation to plot out my function plot. Same as when I was plotting my histogram, I  add my x and y values, I set the colour, label the function and the title. I add a legend the same way as I did for the histogram.
 
 ```
 # Create the function plot.
@@ -866,23 +714,24 @@ plt.ylabel('h(x)')
 # Add a legend to the function plot.
 plt.legend(loc='upper left' )
 ```
-I save the histogram and plot as a PNG using plt.save fig. Note: I had to change the flow of plt.show() and plt.savefig(). If I ran plt.show() first, the saved file would come up blank. They were interferring with each other. So I have plt.savefig() come first. 
+I save the histogram and plot as a PNG using plt.save fig. I refer to information on [matplotlib.org](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html) for this.  Note: I had to change the flow of plt.show() and plt.savefig(). If I ran plt.show() first, the saved file would come up blank. They were interferring with each other. So I have plt.savefig() come first. 
 
 ```
 # Save the histogram and plot.
 plt.savefig('plottask.png')
 
 ```
-Using subplots means that the graps could overlap at the axis, title etc. I use tight_layout() function to prevent any overlap and keep the grap looking tidy. Then I use plt.show() to show the graph. 
+Using subplots means that the graps could overlap at the axis, title etc. I researched the tight_layout() function on [Geeksforgeeks.org](https://www.geeksforgeeks.org/matplotlib-pyplot-tight_layout-in-python/) and use it to prevent any overlap and keep the grap looking tidy. Then I use plt.show() to show the graph. 
 ```
 # Adjust layout to avoid any overlap of the histogram or plot.
 plt.tight_layout()
 
 # Display the plots.
+# This will open a window showing the plots.
 plt.show()
 ```
 
-## Rescourses: 
+## Additional Rescourses: 
 
 **Information on Histograms, particularly useful for information on the Horizontal and Vertical axis.**
 
@@ -892,58 +741,21 @@ plt.show()
 
 [Datacamp.com](https://www.datacamp.com/blog/frequency-histograms?utm_source=chatgpt.com)
 
-**Numpy Random Function.**
-
-[Numpy.org](https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html)
-
-**Mathplotlib Subplot Documentation.**
-
-[Matplotlib.org](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot.html)
-
-**Matplotlib Pyplot Histogram Documenation.**
-
-[Matplotlib.org](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html)
-
-**Add legend to Histogram.**
-
-[Geeksforgeeks.org](https://www.geeksforgeeks.org/matplotlib-pyplot-legend-in-python/)
-
-**Numpy Arrange Function.**
-
-[Numpy.org](https://numpy.org/doc/stable/reference/generated/numpy.arange.html)
-
-[Geeksforgeeks.org](https://www.geeksforgeeks.org/numpy-arrange-in-python/)
-
-**Python Program to Find Cube of a Number (Using the exponentiation operator).**
-
-[Geeksforgeeks.org](https://www.geeksforgeeks.org/python-program-to-find-cube-of-a-number/)
-
-**Matplotlib Pyplot Plot Documenation.**
-
-[matplotlib.org](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html)**
-
-**Matplotlib Savefig Function.**
-
-[matplotlib.org](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html)**
-
-**Tight Layout Funcion.**
-
-[Geeksforgeeks.org](https://www.geeksforgeeks.org/matplotlib-pyplot-tight_layout-in-python/)
 
 
 
-# Contact
+# Contact Information
 
 Student ID: G00472977
 
 Contact Email: G00472977@atu.ie
 
 
-# Additional Rescources 
+# Rescources:
 
 Useful template for creating this ReadMe file- [Github Best ReadMe Template](https://github.com/othneildrew/Best-README-Template/blob/main/README.md)
 
-Useful to help format and use correct syntax for the ReadMe File, particularly for quoting code - [Githubdocs](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+Useful to help format and use correct syntax for the ReadMe File, particularly for quoting code or references - [Githubdocs](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 Useful introduction to Python - [Python.org](https://docs.python.org/3/tutorial/introduction.html#)
 
