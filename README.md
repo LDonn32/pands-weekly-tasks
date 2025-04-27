@@ -264,25 +264,28 @@ while number != 1:
 I used the append() method [W3schools append()](https://www.w3schools.com/python/ref_list_append.asp) which adds a single element to the end of a list. It modifies the original list in place and does not return a new list.
 
 ```
-# Add the current number to the sequence.
+# Add the current number to the sequence using the append() function.
 sequence.append(number)
 ```
 
 I applied the Collatz rule to the program using if and else statements. These statements will check if the number is even or odd and then apply the corresponding rule (If even, divide by 2) or (If odd, multiply by 3 and add 1).
 
 ```
-        # Apply the Collatz rule.
-        if number % 2 == 0:
-            number = number // 2  # If even, divide by 2
-        else:
-            number = 3 * number + 1  # If odd, multiply by 3 and add 1
+# Apply the Collatz rule using if and else statements.
+
+# If even, divide by 2
+if number % 2 == 0:
+    number = number // 2  
+# Else if it is odd, multiply by 3 and add 1
+else:
+    number = 3 * number + 1  
 ```
 
 
 While number !=1: stops when the number becomes 1, it actually doesn't add it in the sequence, it's the end of the Collatz chain. I need to include 1 manually and I do this by using the Append() Method.
 
 ```
-    # Add 1 to the sequence as the loop ends when number becomes 1.
+    # Add 1 to the sequence as the loop ends when number becomes 1 using the append() function.
     sequence.append(1)
 ```
 
