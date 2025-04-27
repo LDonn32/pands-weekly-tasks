@@ -155,19 +155,20 @@ Here I am defining the function and naming it mask_account_number. This will the
 ```
 # Define the function.
 def mask_account_number():
-    # Prompt the user for their 10 digit account number.
-    account_number = input("Please enter your 10-character account number: ")
+    # Prompt the user for their 10 character account number.
+    account_number = input("Please enter your 10-character account number: ") 
 ```
 I am using len() function == 10 to make sure that the input is exactly 10 characters. I used this resource [len() Function] on w3schools.(https://www.w3schools.com/python/ref_func_len.asp). I make the I am using the [-4:] slice which will take from the 4th character from the end to the end.
 ```
-    # Check if the input length is 10 characters.
-    if len(account_number) == 10:
-        # Replace first 6 characters with X to mask the digits and keep the last 4 digits
-        masked_account_number = 'XXXXXX' + account_number[-4:]
+# Check if the input length is actually 10 characters.
+if len(account_number) == 10:
+    # Replace the first 6 characters with X to mask the numbers and keep the last 4 numbers.
+    masked_account_number = 'XXXXXX' + account_number[-4:]
 ```        
         # Print the masked account number.
         print("Masked account number:", masked_account_number)
         
+    # Print an error message asking the user to try again.        
     else:
         print("Invalid number! Please ensure to enter a 10-character account number.")
         
@@ -176,23 +177,26 @@ I am using len() function == 10 to make sure that the input is exactly 10 charac
 ## EXTRA: Modified Code explained 
 
 
-To get the length of the account number, I used the len() function which will return the number of characters in the string [len() Function].(https://www.w3schools.com/python/ref_func_len.asp)
+To get the length of the account number, I used the len() function which will return the number of characters in the string [len() Function](https://www.w3schools.com/python/ref_func_len.asp).
 
 ```
+# Prompt the user for their account number.
+# No request for character lenght in the prompt.
+
   account_length = len(account_number)
   
 ```
 
-To modify the program to handle different character lenghts, I used the if, else statements, I found this resource really helpful to understand how to use them [Programiz.com] (https://www.programiz.com/python-programming/if-elif-else).
+To modify the program to handle different character lenghts, I used the if, else statements, I found this resource really helpful to understand how to use them [Programiz.com](https://www.programiz.com/python-programming/if-elif-else).
 
 When handling account numbers with more than 4 characters, I set the program to only show the last 4 characters. For example, if an account number with 6 characters is entered, the first 2 will be masked and the last 4 will be visable.
 
 ```
-# Check if the account number has at least 4 characters.
+# Using if, else statements, check if the account number has at least 4 characters.
 if account_length >= 4:
     if account_length > 4:
-        # Mask all but the last 4 digits.
-     masked_account_number = 'X' * (account_length - 4) + account_number[-4:]
+        # If account number is greater than 4 it will mask all but the last 4 numbers.
+        masked_account_number = 'X' * (account_length - 4) + account_number[-4:]
 ```
 
 When handling account numbers with exactly 4 characters, I decided to show the whole number rather than mask the only 4 characters. My thinking behind this is so that the account number is readable in the output terminal. I contemplated masking 2 characters instead of 4 for these cases, but my assumption would be for most bank accounts is that you need the last 4 characters to identify a users bank account.
@@ -216,19 +220,19 @@ else:
 
 **Information on strings.**
 
-[Python.org] (https://docs.python.org/3/library/string.html)
+[Python.org](https://docs.python.org/3/library/string.html)
 
-[Python.org] (https://docs.python.org/3/tutorial/introduction.html#strings)
+[Python.org](https://docs.python.org/3/tutorial/introduction.html#strings)
 
-[w3schools.com] (https://www.w3schools.com/python/python_strings.asp)
+[w3schools.com](https://www.w3schools.com/python/python_strings.asp)
 
 **Len() Function.**
 
-[w3schools.com] (https://www.w3schools.com/python/ref_func_len.asp)
+[w3schools.com](https://www.w3schools.com/python/ref_func_len.asp)
 
 **If, elif and else statements.**
 
-[Programiz.com] (https://www.programiz.com/python-programming/if-elif-else)
+[Programiz.com](https://www.programiz.com/python-programming/if-elif-else)
 
 
 # Weekly Task 4 - collatz.py
@@ -251,8 +255,21 @@ Please enter a positive integer: 10
 
 ## Code explained
 
-After defining my function and prompting user input 
-[input()function](https://docs.python.org/3/library/functions.html#input), I need to ensure that the number the user inputs is a positive integer. I did this by applying an if statement.
+I define my function and prompt user input 
+[input()function](https://docs.python.org/3/library/functions.html#input), I convert the number inputted to an interger [W3 Schools int()](https://www.w3schools.com/python/ref_func_int.asp)
+
+```
+# Define the function.
+# This function allows the programm to take input from the user, which is used to ask the user for a positive integer.
+
+def collatz():
+    # Prompt the user to input a positive integer.
+    number = int(input("Please enter a positive integer: "))
+```
+
+
+I need to ensure that the number the user inputs is also a positive integer. I did this by applying an if statement see [Programiz.com](https://www.programiz.com/python-programming/if-elif-else) for information on if,else statements.
+
 
 ```
 # Ensure the number is positive.
@@ -261,14 +278,15 @@ if number <= 0:
     return
 ```
 
-Python Lists Lists are used to store multiple items in a single variable. I used a list in the program to store the sequence of numbers.
+[W3schools Python Lists](https://www.w3schools.com/python/python_lists.asp) are used to store multiple items in a single variable. I used a list in the program to store the sequence of numbers.
 
 ```
 # Create a list to store the sequence.
 sequence = []
 ```
 
-Next I added a while loop. With the while loop, the program can execute a set of statements as long as a condition is true.
+Next I added a while loop. With the while loop, the program can execute a set of statements as long as a condition is true. 
+[W3schools While Loop](https://www.w3schools.com/python/python_while_loops.asp) is a great resource for understanding how to use a while loop. I also found this video helpful [Youtube.com](https://www.youtube.com/watch?time_continue=175&v=ECduJk00mUU&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=Mjg2NjY). For information on conditional statements, i refer to [W3schools Python Conditions](https://www.w3schools.com/python/python_conditions.asp)
 
 ```
 # Continue the process until the number becomes 1.
@@ -276,7 +294,7 @@ while number != 1:
 
 ```
 
-I used the append() method which adds a single element to the end of a list. It modifies the original list in place and does not return a new list.
+I used the append() method [W3schools append()](https://www.w3schools.com/python/ref_list_append.asp) which adds a single element to the end of a list. It modifies the original list in place and does not return a new list.
 
 ```
 # Add the current number to the sequence.
@@ -301,7 +319,7 @@ While number !=1: stops when the number becomes 1, it actually doesn't add it in
     sequence.append(1)
 ```
 
-I used the join() method  to convert a list of numbers into a string with spaces between them.
+I used the join() method [Python.org join()](https://docs.python.org/3/library/stdtypes.html#str.join), [W3schools.com join()](https://www.w3schools.com/python/ref_string_join.asp) to convert a list of numbers into a string with spaces between them.
 
 ```
     # Output the sequence as a space-separated string.
@@ -310,7 +328,7 @@ I used the join() method  to convert a list of numbers into a string with spaces
 
 
 
-## Resources:
+## Additional Resources:
 
 **Information on the Collatz Problem.**
 
@@ -347,6 +365,8 @@ I used the join() method  to convert a list of numbers into a string with spaces
 [Python.com](https://docs.python.org/3/library/stdtypes.html#str.join)
 
 [W3schools](https://www.w3schools.com/python/ref_string_join.asp)
+
+
 
 **Looked at examples others did.**
 
@@ -391,7 +411,7 @@ Tgif!!! It's Friday woohoo!!
 
 ## Code explained 
 
-To start, I need to import the module datetime. This module handles dates and times and will allow me to get the current day of the week. I will use the Weekday() Method to get the days of the week. 
+To start, I need to import the module datetime, I checked [Stackoverflow.com](https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python) and [Geeksforgeeks.org](https://www.geeksforgeeks.org/python-datetime-weekday-method-with-example/) for information on this module.  This module handles dates and times and will allow me to get the current day of the week. I will use the Weekday() Method to get the days of the week. 
 The days of the week are represented as such; 0 = Monday, 1 = Tuesday, 2 = Wednesday, 3 = Thursday, 4 = Friday, 5 = Saturday, 6 = Sunday.
 
 ```
@@ -399,17 +419,21 @@ The days of the week are represented as such; 0 = Monday, 1 = Tuesday, 2 = Wedne
 import datetime
 
 # Using the .weekday() method of a datetime.date object, get the current date ( 0 = Monday - 6 = Sunday).
-weekno = datetime.date.today().weekday()
+weeknumber = datetime.date.today().weekday()
 ```
-I use if, else and elif statements to output what day of the week it is. I ensure to match the numbers to their respective days as per the Weekday() Method.
+I use if, else and elif statements to output what day of the week it is, see [W3schools.com](https://www.w3schools.com/python/python_conditions.asp) for information on if statememts. I ensure to match the numbers to their respective days as per the Weekday() Method.
 
 ```
-# Using if, else and elif statements, set conditions to print for certain days of the week.
-if weekno == 4: # 4 is friday
+# If weekday is 4, (4 is friday) print the below message.
+if weeknumber == 4: 
     print("Tgif!!! It's Friday woohoo!!")
-elif weekno < 5:  # less than 0 - 5 inlcuded (except 4 as defined in if)
+
+# For the days less than 5,  0 - 3 (as 4 is defined in if), print the below message.
+elif weeknumber < 5:  
     print("Yes, unfortunately today is a weekday")
-else: # 5 Sat, 6 Sun
+
+# Else for the weekend,  5 Sat, 6 Sun, print the below message.
+else: 
     print("It is the weekend, yay!")
 ```
 
@@ -443,7 +467,7 @@ This is a more difficult task than some of the others, but will be marked equall
 
 ## Code explained 
 
-I define the function as sqrt as requested in the task. The function will take in two inputs, N and 1.  N represents the number of the square root I am trying to find. 1 represents the tolerance. The tolorence is how accurate I want the program to be. I will set it as up to 5 decimal points later in the code for accuracy.
+I define the function as sqrt as requested in the task. The function will take in two inputs, N and 1.  N represents the number of the square root I am trying to find. 1 represents the tolerance. The tolorence is how accurate I want the program to be. I will set it as up to 5 decimal points later in the code for accuracy. I looked at [Geeksforgeeks.org](https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/) as a starting point for this code.
 
 ```
 # Define function to return the square root of a number using Newton's method.
@@ -451,56 +475,57 @@ def sqrt(n, l):
 
 ```
 
-I am guessing that the square root is n. I am using this as a starting point. I also am using count to keep track of how many times I loop the program before I start a while loop. 
+Using Newton's method, I am guessing that the square root is n itself. I am using this as a starting point as I set the program to guess until it finds the closest number. I also am using count to keep track of how many times I loop the program before I start a while loop. Information on count() method found at [Geeksforgeeks.org](https://www.geeksforgeeks.org/python-list-count-method/).
 
 ```
-    # Assuming the sqrt of n as n only
-    x = n
+  # This will be the first guess where the code guesses the square root of n as n.
+  x = n
 
-    # To count the number of iterations
-    count = 0
-
-```
-I start an infinate while loop that will count.
-
-```
-    while True:
-        count += 1
+  # Use a counter to track how many guesses the program makes.
+  count = 0
 ```
 
-Here is where I add Newton's formula.
-```
-        # Calculate more closed x
-        root = 0.5 * (x + (n / x))
-```
-I compare how much the new guess root differs from the old guess x. If the change is smaller than l, it means it is close enough, so it breaks the loop. The Python abs() function will return the absolute value. Makes sure the number remains a positive integer. 
+I start an infinate while loop that will count, see information on while loops at [Geeksforgeeks.org](https://www.geeksforgeeks.org/how-to-use-while-true-in-python/). Then I add Newton's Method.
 
 ```
-        # Check for closeness
-        if abs(root - x) < l:
-            break
+    # Using while true, keep improving the guess until it gets close.
+while True:
+   # Do this by calculating using Newton's Method (x+ (n/x)). This should get x closer to the square root and give the program a more accurate guess.
+   root = 0.5 * (x + (n / x))
 ```
 
-I update the root so that if the number doesnt get close enough, it will do another guess. I use return function to return the closest value of root.
+I compare how much the new guess root differs from the old guess x. If the changeis close enough, it breaks the loop. The Python abs() function will return the absolute value, see [Geeksforgeeks.org](https://www.geeksforgeeks.org/abs-in-python/)  for information on abs() function. It makes sure the number remains a positive integer. 
 
 ```
-        # Update root
+# Root is the new guess.
+# X is the old guess.
+# (root - x) will check the difference between the new and old guess.
+# Using the abs() function to return the absolute value of it.
+# If the number is close enough to the old one, the loop while break.
+if abs(root - x) < l:
+    break
+```
+
+I update the root to the newest guess. I use return function to return the closest value of root.
+
+```
+        #  Update the guess to the new number.
         x = root
 
     return root
 ```
 
-Next I need to get user input. I do this by asking the user to input a positive interger. I then convert it to a string using the float() function.
+Next I need to get user input. I do this by asking the user to input a positive interger. I then convert it to a floating point number from a string inputted by the user using the float() function. See information on [Geeksforgeeks float()](https://www.geeksforgeeks.org/float-in-python/)
 
 ```
-# Take a positive floating-point number as input
+# Prompt user to input a positive number. Use float() function to convert it to floating-point number.
 n = float(input("Enter a positive number: "))
 ```
 
-I use an if statements to make sure the user input is in fact a positive number. If the user enters 0 or a negative number it will show the error message "Please enter a positive number". 
+I use an if statements to make sure the user input is in fact a positive number. If the user enters 0 or a negative number it will show the error message "Please enter a positive number". I refer back to [W3schools Python Conditions](https://www.w3schools.com/python/python_conditions.asp) for information on if, else statements and python conditions.
 
 ```
-# Ensure that the number is positive
+# # Ensure that the number inputted is actually a positive number. Print message to user to try again if not.
 if n <= 0:
     print("Please enter a positive number.")
 ```
@@ -508,9 +533,13 @@ if n <= 0:
 I use else statements to run the function if the number is valid. I set the tolorenece level as 0.00001 to get as close as possible to the root number. Then I call the sqrt function and print out results. 
 
 ```
+# Set the tolerance to how close it gets to the square number, set at 5 decimals for accuracy.
 else:
-    l = 0.00001  # Tolerance for the approximation
+    l = 0.00001 
     print(f"Approximate square root of {n} is {sqrt(n, l)}")
+
+ Print the results.
+   print(f"Approximate square root of {n} is {sqrt(n, l)}")
 ```
 
 ## Rescourses: 
@@ -519,19 +548,10 @@ else:
 
 [Geeksforgeeks.org](https://www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/)
 
-**Python Count() Method.**
-
-[Geeksforgeeks.org](https://www.geeksforgeeks.org/python-list-count-method/)
-
 **Python While True.**
 
 [Geeksforgeeks.org](https://www.geeksforgeeks.org/how-to-use-while-true-in-python/)
 
-**Using Count() with a while loop.**
-
-[Stackoverflow.com](https://stackoverflow.com/questions/20255372/record-how-many-times-a-while-loop-runs-python)
-
-[Bobbyhadz.com](https://bobbyhadz.com/blog/python-count-in-for-loop)
 
 **Using abs() Function.**
 
@@ -562,12 +582,10 @@ $ python es.py moby-dick.txt
 
 ## Code explained 
 
-Assumptions before starting this program: I am only looking at lower case 'e' for this code. The file to read in will be a txt file. If user input doesnt give me a file name or an incorrect file type, program will print out an error message.
+I make some assumptions before starting this program: I am only looking at lower case 'e' for this code. The file to read in will be a txt file. If user input doesnt give me a file name or an incorrect file type, I need the program to print out an error message.
 
 
-I import packages OS and SYS. Sys gives better control over input or output. Users can engage with the terminal/ comand line more freely. OS allows me to check file paths, if they exist or not.
-
-
+I import packages OS and SYS. Sys gives better control over input or output. Users can engage with the terminal/ comand line more freely. I found information on SYS at[Geeksforgeeks.org](https://www.geeksforgeeks.org/python-sys-module/) and [Stackoverflow.com](https://stackoverflow.com/questions/70797/user-input-and-command-line-arguments). OS allows me to check file paths, if they exist or not. I found information on OS at [Geeksforgeeks.org](https://www.geeksforgeeks.org/os-module-python-examples/).
 ```
 
 # Import packages.
@@ -582,63 +600,90 @@ import os
 I define the function as count_e and this will take in the file name.
 
 ```
-# Define the function.
+# Define the function that will count the number of lowercase 'e's in a file.
 def count_e(filename):
 ```
 
-I start error handling for the program. I will use try, else statements. First, I use try which will follow the code set out in the with the open() function. This will open the file, 'r' opens it for reading (default). I include 'with' before open as it will ensure to automatically close the file after. I was getting the error 'ValueError: I/O operation on closed file' with first draft of the code, I believe I wasn't closing the file in the right way and after I used the 'With' function it didn't occur. 
+I start error handling for the program. I will use try, except statements. I found the resources on [W3schools.com Try Except](https://www.w3schools.com/python/python_try_except.asp) and 
+[Realpython.com Python Exceptions](https://realpython.com/python-exceptions/) helpful here.
 
-I add in encoding='utf-8' to read the text file. When I tried to run the code without including it, I got the error 'the file mobydick.txt could not be read as a text file', so after researching this error type I realised the moby dick text file had some other language characters in it so I needed to include UTF-8 it in to read the characters in the file correctly.
+First, I use try which will follow the code set out in the with the open() function. This will open the file, 'r' opens it for reading (default). I include 'with' before open as it will ensure to automatically close the file after. I refer to [www.pythontutorial.net](https://www.pythontutorial.net/python-basics/python-read-text-file/) for information on how to read a textfile. I was getting the error 'ValueError: I/O operation on closed file' with first draft of the code, I believe I wasn't closing the file in the right way and after I used the 'With' function it didn't occur. 
 
-I use file.read() to read in the text file as a string and then return it to count the number of lowercase 'e's using str.count() (changed to text.count to match the variable name). I am making the assumption of only counting the lower case 'e's for this task.
+I add in encoding='utf-8' to read the text file. When I tried to run the code without including it, I got the error 'the file mobydick.txt could not be read as a text file', so I read back on the resource on [www.pythontutorial.net](https://www.pythontutorial.net/python-basics/python-read-text-file/) about utf-8, I realised the moby dick text file I am using has some other language characters in it so I needed to include UTF-8 it in to read the characters in the file correctly.
+
+I use file.read() [Geeksforgeeks.org using read()](https://www.geeksforgeeks.org/how-to-read-from-a-file-in-python/) to read in the text file as a string and then return it to count the number of lowercase 'e's using str.count() (changed to text.count to match the variable name). Information on count() was found at [W3schools.com](https://www.w3schools.com/python/ref_string_count.asp).
 
 ```
-   # Error handling using try and except statements.
+  # Error handling using try and except statements to catch any possible errors.
 try:
-    # Open the file in read mode with UTF-8 encoding.
+    # Open the file in read mode with UTF-8 encoding. 
+    # Using with to close the file automaticall when done.
     with open(filename, 'r', encoding='utf-8') as file:
-        # Read in the file.
+        # Read the file using read().
         text = file.read()
         # Count the number of lowercase 'e's.
         return text.count('e')
 ```
 
-Moving onto except cases for the error handling. I use except to catch files that don't exist. If the file inputed by the user doesnt exist, the message file not found will be printed on the terminal. I use sys.exit(1) which means there was an errorthat is why the program is exiting.
+Moving onto except cases for the error handling. I use except to catch files that don't exist. If the file inputed by the user doesnt exist, the message file not found will be printed on the terminal. I use sys.exit(1) which means there was an error and that is why the program is exiting. I found information on sys.exit on [Stackoverflow.com](https://stackoverflow.com/questions/9426045/difference-between-exit0-and-exit1-in-python), which was helpful to understand the different error code 0 and 1.
 ```
 # Error handling with except statement to catch when the file doesn't exist.    
 except FileNotFoundError:
+    # Print error message for user. 
     print(f"Error: The file '{filename}' was not found.")
+    # Exits the program with the error code 1, which means an error has occurred
     sys.exit(1)
 ```
-I use except UnicodeDecodeError to catch any files inputted that aren't text files. For example, binary files, png files. To test this, I used the plottask.png file from Weekly Task 08 to make sure the error message prints. I use Exception next, stored as e to catch any other types of unexpected errors that could come through the program.
+I use except UnicodeDecodeError to catch any files inputted that aren't text files. For example, binary files, png files. To test this, I used the plottask.png file from Weekly Task 08 to make sure the error message prints. I use Exception next, stored as e to catch any other types of unexpected errors that could come through the program. 
+Information on using Exception was found on [stackoverflow.com](https://stackoverflow.com/questions/18982610/difference-between-except-and-except-exception-as-e) and on [Python.org](https://docs.python.org/3/library/exceptions.html#os-exceptions).
+
 
 ```
 # Error handling with except statement to catch when a file can't be read as UTF-8 (e.g. png file, binary file)    
 except UnicodeDecodeError:
+    # Print error message for user.
     print(f"Error: The file '{filename}' could not be read as a text file.")
+    # Exit the program with the error code 1, which means an error has occurred.
     sys.exit(1)
+
 # Error handling with except statement to catch any other unexpected errors and print an error for user.
 except Exception as e:
+
+  # Print error message for user.
+  print(f"An unexpected error occurred: {e}")
+  # Exit the program with the error code 1, which means an error has occurred.
+  sys.exit(1)
 ```
-Now after setting up the error handling, I look at the main function (which I have named, main). I use the len()- function  to count the number of arguments passed to the command line. Since the iteration starts with 0, it also counts the name of the program as one argument. This line checks the script es.py, with the index 0 and the arguement passed in, the file name, with the index 1. So I have the if statement to check for less than 2 to only check for the script name and the arguement passed in. It checks for if the user inputed a file name, and then prints out information for the user on how to run the program.
+
+Now after setting up the error handling, I look at the main function (which I have named, main). I use the len()- function, see [Realpython.com len()](https://realpython.com/len-python-function/),  to count the number of arguments passed to the command line. Since the iteration starts with 0, it also counts the name of the program as one argument. This line checks the script es.py, with the index 0 and the arguement passed in, the file name, with the index 1. So I have the if statement to check for less than 2 to only check for the script name and the arguement passed in. It checks for if the user inputed a file name, and then prints out information for the user on how to run the program. I found the information on using sys.argv on [Geeksforgeeks.org](https://www.geeksforgeeks.org/how-to-use-sys-argv-in-python/) and [Stackoverflow.com](https://stackoverflow.com/questions/29045768/how-to-use-sys-argv-in-python-to-check-length-of-arguments-so-it-can-run-as-scri) helpful here. 
 
 ```
+# Define the main function that will run the program.
 def main():
-    # Check for filename argument passed in the command line. 
+
+    # Check for filename argument passed in the command line.
+    # Use sys.argv to pass in the script name and the arguement. 
     if len(sys.argv) < 2:
+        
+        # Print a message to user if they dont input a file on how to do so.
         print("Run on Command line: python es.py <filename>")
+
+        # Exit the program with the error code 1, which means an error has occurred.
         sys.exit(1)
 ```
 
-I store the arguement as a variable called filename to call on later. I use the os.path.isfile() method to check if the file actually exists and is a file, that it is not a directory or invalid path. If it is not it will print out an error for the user. I call the function to count the number of 'e's in the file and then print out the results for the user. 
+I store the filename as the second arguement. I use the os.path.isfile(), see 
+[Geeksforgeeks.org os.path.isfile()](https://www.geeksforgeeks.org/python-os-path-isfile-method/), to check if the file actually exists and is a file, that it is not a directory or invalid path. If it is not, it will print out an error for the user. I call the function to count the number of 'e's in the file and then print out the results for the user. 
 
 ```
-# Store arguement as a variable to call on later.
+# Store the file name inputted as the second argument.
 filename = sys.argv[1]
 
-# Check if the given file path is a valid file.
+# Check if the given file path actually is a valid file.
 if not os.path.isfile(filename):
+    # If so, print error message for user.
     print(f"Error: '{filename}' is not a valid file.")
+    # Exit the program with the error code 1, which means an error has occurred.
     sys.exit(1)
 
 # Call the function to count 'e's.
@@ -647,7 +692,7 @@ number_of_es = count_e(filename)
 print(f"The file '{filename}' contains {number_of_es} lowercase 'e' characters.")
 ```
 
-I use the name gaurd to make sure that main() only runs when this file is being used, and not when it's imported into another Python script. 
+I use the name gaurd to make sure that main() only runs when this file is being used, and not when it's imported into another Python script. Information on name gaurd was found on [Stackoverflow.com Name Gaurd](https://stackoverflow.com/questions/419163/what-does-if-name-main-do)
 
 ```
 # Run the main function using Name Gaurd. 
