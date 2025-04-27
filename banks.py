@@ -5,10 +5,7 @@
 
 
 # Prompt the user for first amount of money in cents.
-# See: https://www.geeksforgeeks.org/taking-input-from-console-in-python/
-
 # Convert the inputted string to a float number.
-# See: https://www.geeksforgeeks.org/float-in-python/
 
 amount1 =float(input("Enter amount of money in cent:"))
 
@@ -22,7 +19,6 @@ amount2 = float(input("Enter a second amount of money in cents:"))
 Sum = (amount1 + amount2)/100
 
 # Print with a F string to include the euro sign.
-# See: https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/
 
 print(f"The sum of these is €{Sum}")
 
